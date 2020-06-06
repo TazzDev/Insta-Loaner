@@ -1,0 +1,14 @@
+
+@import './components/header';
+@import './background';
+@import './components/home';
+@import './components/why';
+@import './components/compare';
+@import './components/footer';
+@import './components/personal';
+@import './components/banks';
+@import './components/offers';
+
+html {
+    scroll-behavior: smooth;
+}

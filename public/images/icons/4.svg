@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21.668" height="28.464" viewBox="0 0 21.668 28.464">
+  <g id="rbl-bank" transform="translate(0)">
+    <path id="Path_1" data-name="Path 1" d="M276,388h5.5v17.118h0v8.608l-5.5-2.754Z" transform="translate(-275.998 -388)" fill="#0f0f76" fill-rule="evenodd"/>
+    <path id="Path_2" data-name="Path 2" d="M287.668,391.236a10.833,10.833,0,1,1-6.169,1.372v8.169a5.693,5.693,0,0,0-.143,1.264,5.477,5.477,0,1,0,6.313-5.413V391.24Z" transform="translate(-275.998 -385.736)" fill="#0f0f76" fill-rule="evenodd"/>
+    <path id="Path_3" data-name="Path 3" d="M276,402.04a10.828,10.828,0,0,1,10.144-10.808V396.6a5.4,5.4,0,0,0-4.645,5.475V414.2H276V402.037Z" transform="translate(-275.998 -385.738)" fill="red" fill-rule="evenodd"/>
+  </g>
+</svg>

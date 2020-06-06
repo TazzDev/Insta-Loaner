@@ -1,0 +1,86 @@
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import Why from './Why';
+import Compare from './Compare';
+import Offers from './Offers';
+import Personal from '../../public/images/Personal.png';
+import Business from '../../public/images/Business.png';
+import HomeImg from '../../public/images/Home.png';
+import Property from '../../public/images/Property.png';
+
+const Home = () => {
+    return (
+        <React.Fragment>
+        <MobileHome />
+        <div style={{margin: '0', padding: '0'}} id="home">
+            <div className="background"></div>
+        <div id="formSection">
+            <div className="quote">
+                <h1>MAXIMIZE YOUR<br/>
+                CREDIT QUOTIENT</h1>
+            </div>
+            <form id="homeForm" action="https://formsubmit.co/thomsonbingo@gmail.com" method="POST">
+                    <legend>Get an instant quote now!</legend>
+                    <div className="formControls">
+
+                        <div className="formGroup">
+                            <label htmlFor="name">Name</label>
+                            <input type="text" name="name" />
+                        </div>
+
+                        <div className="formGroup">
+                            <label htmlFor="email">Email</label>
+                            <input type="text" name="email" />
+                        </div>
+
+                        <div className="formGroup">
+                            <label htmlFor="phone">Phone</label>
+                            <input type="tel" name="phone" />
+                        </div>
+
+                    </div>
+                    <input type="submit" value="Go!" className="button"/>
+            </form>
+        </div>
+
+        <div id="linkSection">
+            <NavLink to="/personal-loan" className="linkLogo">
+                <img src={Personal}></img>
+                <p>PERSONAL LOAN</p>
+            </NavLink>
+
+            <NavLink to="/loans" className="linkLogo">
+                <img src={Business}></img>
+                <p>BUSINESS LOAN</p>
+            </NavLink>
+
+            <NavLink to="/loans" className="linkLogo">
+                <img src={HomeImg}></img>
+                <p>HOME LOAN</p>
+            </NavLink>
+
+            <NavLink to="/loans" className="linkLogo">
+                <img src={Property}></img>
+                <p>PROPERTY LOAN</p>
+            </NavLink>
+        </div>
+        <Why />
+        <Compare />
+        <Offers />
+        </div>
+        </React.Fragment>
+    )
+}
+
+const MobileHome = () => (
+    <div id="mHome">
+        <div className="mQuote">
+            <h1>MAXIMIZE YOUR CREDIT 
+            <br/>QUOTIENT!</h1>
+            <p>Compare & and apply for personalized loans with leading lenders and choose with ease</p>
+        </div>
+        <button id="mHomeButton">Apply Now</button>
+    </div>
+)
+
+export default Home;

@@ -1,0 +1,138 @@
+#formSection {
+    display: flex;
+    padding: 6rem 5rem 0 5rem;
+    font-family: 'Roboto',sans-serif;
+}
+
+
+.quote {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: rgba(255,255,255,0.8);
+    margin: 0;
+    padding: 0;
+    font-size: 3.6rem;
+    font-weight: 400;
+}
+
+#homeForm {
+    color: #f9f9f9;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 7px solid rgba(13, 165, 137, 0.5);
+    border-radius: 50px;
+    padding: 1.5rem 0 1.5rem 0;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(5px);
+    text-align: center;
+    font-weight: 500;
+    word-spacing: 5px;
+    font-size: 1.2rem;
+}
+
+.formControls {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.formGroup {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.formGroup > label {
+    margin-right: 2rem;
+    align-self: center;
+}
+
+.formGroup > input {
+    border-radius: 15px;
+    background: rgba(92, 91, 91, 0.6);
+    border:  0.2px solid rgb(116, 113, 113);
+    padding: 0.5rem;
+    color: white;
+}
+
+#linkSection { 
+    display: flex;
+    padding: 0 6rem;
+    margin-bottom: 8rem;
+}
+
+.linkLogo {
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10rem;
+}
+
+.linkLogo > img {
+    width: 85px;
+    height: 85px;
+}
+
+
+//Mobile-level attributes
+
+#mHome {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width: 768px) {
+    #home {
+        display: none;
+    }
+
+    #mHome {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.mQuote {
+    color: #00d1a1;
+    font-family: 'Roboto',sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mQuote > h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: bolder;
+    margin: 10% 0 8% 0;
+}
+
+.mQuote > p {
+    text-align: center;
+    color: rgba(92, 91, 91, 0.8);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.02rem;
+    margin: 0 5% 5% 5%;
+}
+
+#mHomeButton {
+    border: none;
+    background: #00d1a1;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(36, 37, 37, 0.5);
+    color: white;
+    font-family: 'Roboto',sans-serif;
+    text-align: center;
+    height: 3rem;
+    width: 10rem;
+    letter-spacing: 2px;
+}

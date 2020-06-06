@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+header {
+    padding-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto',sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.navlinks {
+    margin-left: 5vw;
+    //font-weight: bold;
+    color: rgba(2,249,194,1);
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 30px;
+    padding: 0.8rem 1.5rem 0.2rem 1.5rem;
+    //font-size: 1.4rem;
+    max-height: 2rem;
+    text-shadow: 0 0.5px 1px rgba(0,0,0,0.6);
+}
+
+.logo {
+    width: 15rem;
+    height: 7rem;
+}
+
+
+
+//mobile design attributes
+
+//Not active in desktop mode
+#mHeader {
+    display: none;
+}
+
+//Media query for mobile mode
+@media only screen and (max-width: 768px) { 
+    #mHeader {
+        display: initial;
+        width: 100%;
+    }
+
+    header {
+        display: none;
+    }
+}
+
+.mLogo {
+    width: 40vw;
+    height: 10vh;
+    padding: 3% 5% 0 5%;
+}
+
+#mHeadLine {
+    color: rgba(172, 172, 172, 0.4);
+    box-shadow: 1px 1px rgba(172,172,172,0.2);
+}
+
+
+

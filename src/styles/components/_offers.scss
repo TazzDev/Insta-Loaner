@@ -1,0 +1,22 @@
+#offerTitle {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#offerContainer {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    margin: 5rem 0 5rem 0;
+}
+
+.offerCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 25rem;
+    min-height: 25rem;
+    background: rgb(68, 182, 83);
+    border-radius: 50%;
+    margin: auto;
+}

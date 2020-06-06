@@ -1,0 +1,19 @@
+#compareContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#compareTitle {
+    max-width: 60%;
+    margin-bottom: 5rem;
+}
+
+#compareTitle > h3  {
+    font-size: 1.5rem;
+}
+
+#partners {
+    width: 45%;
+    margin-bottom: 5rem;
+}

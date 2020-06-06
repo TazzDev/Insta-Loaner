@@ -1,0 +1,42 @@
+#whyContainer {
+    max-width: 100%;
+    background: linear-gradient(white,#e5d270);
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+#content {
+    font-family: sans-serif;
+    min-width: 60%;
+    text-align: center;
+}
+
+#content > h1 {
+    font-weight: 300;
+}
+
+#content > h4 {
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+#content > hr {
+    color: black;
+    border-style: dotted;
+}
+
+#benefits {
+    display: flex;
+}
+
+.benefit {
+    display: flex;
+    flex-direction: column;
+    max-width: 15rem;
+    margin: 5rem;
+}
+
+.benefit > p {
+    line-height: 2rem;
+}
