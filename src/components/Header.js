@@ -21,13 +21,23 @@ const Header = () => (
     
         <nav>
             <NavLink to="/about" activeClassName="is-active" className="navlinks">ABOUT US</NavLink>
-            <NavLink to="/personal-loan" activeClassName="is-active" className="navlinks">LOANS</NavLink>
+                <span className="navlinks"  id="loanbtn">
+              LOANS
+                </span>
+
             <NavLink to="/financial-services" activeClassName="is-active" className="navlinks">FINANCIAL SERVICES</NavLink>
             <NavLink to="/join-as-partner" activeClassName="is-active" className="navlinks">JOIN AS PARTNER</NavLink>
         </nav>
     </header>
     </React.Fragment>
 );
+
+
+/**
+ * Styles for the burger 
+ * menu are given below,
+ * do not tamper
+ */
 
 var styles = {
     bmBurgerButton: {

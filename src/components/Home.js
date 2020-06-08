@@ -17,7 +17,7 @@ const Home = () => {
         <div id="formSection">
             <div className="quote">
                 <h1>MAXIMIZE YOUR<br/>
-                CREDIT QUOTIENT</h1>
+                CREDIT QUOTIENT!</h1>
             </div>
             <form id="homeForm" action="https://formsubmit.co/thomsonbingo@gmail.com" method="POST">
                     <legend>Get an instant quote now!</legend>
@@ -79,7 +79,43 @@ const MobileHome = () => (
             <br/>QUOTIENT!</h1>
             <p>Compare & and apply for personalized loans with leading lenders and choose with ease</p>
         </div>
+
         <button id="mHomeButton">Apply Now</button>
+
+        <div id="mLinkSection">
+            <NavLink to="/personal-loan" className="mLinkLogo">
+                <img src={Personal}></img>
+                <p>Personal Loan</p>
+            </NavLink>
+
+            <NavLink to="/loans" className="mLinkLogo">
+                <img src={Business}></img>
+                <p>Business Loan</p>
+            </NavLink>
+
+            <NavLink to="/loans" className="mLinkLogo">
+                <img src={HomeImg}></img>
+                <p>Home Loan</p>
+            </NavLink>
+
+            <NavLink to="/personal-loan" className="mLinkLogo">
+                <img src={Personal}></img>
+                <p>Loan against property</p>
+            </NavLink>
+
+            <NavLink to="/loans" className="mLinkLogo">
+                <img src={Business}></img>
+                <p>Credit Score</p>
+            </NavLink>
+
+            <NavLink to="/loans" className="mLinkLogo">
+                <img src={HomeImg}></img>
+                <p>Credit Card</p>
+            </NavLink>
+        </div>
+
+        <Why />
+        <Compare />
     </div>
 )
 

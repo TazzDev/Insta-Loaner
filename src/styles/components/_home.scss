@@ -80,11 +80,15 @@
 
 
 //Mobile-level attributes
+//Seperate section for mobile styling
 
 #mHome {
     display: none;
     width: 100%;
     height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -95,9 +99,6 @@
 
     #mHome {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
 }
 
@@ -135,4 +136,32 @@
     height: 3rem;
     width: 10rem;
     letter-spacing: 2px;
+}
+
+#mLinkSection {
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 15%;
+}
+
+.mLinkLogo > img{
+    max-width: 5rem;
+    max-height: 5rem;
+}
+
+.mLinkLogo{
+    text-decoration: none;
+    max-width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 3%;
+}
+
+.mLinkLogo > p {
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 0.9rem;
+    color: rgba(92, 91, 91, 0.6);
 }

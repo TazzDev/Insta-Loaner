@@ -17,3 +17,11 @@
     width: 45%;
     margin-bottom: 5rem;
 }
+
+//Mobile responsiveness
+
+@media (max-width: 768px) {
+    #partners {
+        width: 100%;
+    }
+}

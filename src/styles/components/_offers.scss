@@ -12,11 +12,32 @@
 
 .offerCard {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     min-width: 25rem;
     min-height: 25rem;
-    background: rgb(68, 182, 83);
+    background: rgb(255, 255, 255);
+    border: 5px solid rgba(0,0,0,0.1);
     border-radius: 50%;
     margin: auto;
+    font-family: 'Roboto';
+    color: rgb(68,182,83);
+    //box-shadow: 2px 4px 5px rgba(0,0,0,0.4);
+}
+
+.offerCard > h4 {
+    font-size: 2.6rem;
+    margin: 0;
+}
+
+.offerCard > p {
+    font-size: 1.2rem;;
+}
+
+.offerLogo {
+    align-self: center;
+    margin: 0 0 5% 0;
+    width: 25%;
+    height: 25%;
 }

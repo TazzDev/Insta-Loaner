@@ -40,3 +40,16 @@
 .benefit > p {
     line-height: 2rem;
 }
+
+//Mobile responsiveness
+
+@media (max-width: 768px) {
+    #content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #benefits {
+        flex-direction: column;
+    }
+}

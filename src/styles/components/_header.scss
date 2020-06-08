@@ -18,13 +18,35 @@ nav {
     //font-weight: bold;
     color: rgba(2,249,194,1);
     text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(255, 255, 255, 0.15);
     border-radius: 30px;
     padding: 0.8rem 1.5rem 0.2rem 1.5rem;
-    //font-size: 1.4rem;
+    font-size: 1.4rem;
     max-height: 2rem;
     text-shadow: 0 0.5px 1px rgba(0,0,0,0.6);
 }
+
+//Hover for navlinks to change color
+
+.navlinks:hover {
+    animation-name: changeColor;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes changeColor {
+    100% {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+}
+
+//end hover for navlinks
+
+//begin dropdown styling
+
+
+//end dropdown styling
+
 
 .logo {
     width: 15rem;

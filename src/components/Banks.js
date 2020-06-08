@@ -16,7 +16,7 @@ import Fourteen from '../../public/images/icons/14.svg';
 
 const Banks = () => {
     return (
-        <div>
+        <div id="iconContainer">
             <img src={One} alt="text" className="bankIcon"/>
             <img src={Two} alt="text" className="bankIcon"/>
             <img src={Three} alt="text" className="bankIcon"/>

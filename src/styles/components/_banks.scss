@@ -5,3 +5,18 @@
     border: 1px solid rgba(168, 168, 168, 0.418);
     border-radius: 50%;
 }
+
+//Mobile responsiveness
+
+@media (max-width: 768px) {
+    #iconContainer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .bankIcon {
+        height: 15%;
+        width: 15%;
+    }
+}
