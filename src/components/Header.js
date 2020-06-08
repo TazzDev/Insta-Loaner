@@ -25,7 +25,7 @@ const Header = () => (
               LOANS
                 </span>
 
-            <NavLink to="/financial-services" activeClassName="is-active" className="navlinks">FINANCIAL SERVICES</NavLink>
+            <span className="navlinks">FINANCIAL SERVICES</span>
             <NavLink to="/join-as-partner" activeClassName="is-active" className="navlinks">JOIN AS PARTNER</NavLink>
         </nav>
     </header>

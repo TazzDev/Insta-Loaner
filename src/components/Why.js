@@ -7,7 +7,7 @@ import Ben4 from '../../public/images/ben4.png';
 
 const Why = () => {
     return (
-        <div id="whyContainer">
+        <div id="whyContainer" >
             <div id="content">
                 <h1>Why Choose Us?</h1><hr/>
                 <h4>Enjoy Multiple Benefits When You Take A Loan</h4>
@@ -45,5 +45,6 @@ Compare from various offering on our platform</p>
         </div>
     )
 };
+
 
 export default Why;

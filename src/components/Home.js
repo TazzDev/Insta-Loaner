@@ -116,6 +116,7 @@ const MobileHome = () => (
 
         <Why />
         <Compare />
+        <Offers />
     </div>
 )
 

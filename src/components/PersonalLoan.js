@@ -1,4 +1,5 @@
 import React from 'react';
+import Why from '../components/Why';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
 import C1 from '../../public/images/carousel/c1.jpg';
@@ -31,7 +32,7 @@ export default class PersonalLoan extends React.Component {
             errors.nameErr = nameRegex.test(value) ? '' : 'Please enter a valid name';
             break;
         case 'phone':
-            errors.telErr = telRegex.test(value) ? '' : 'Please enter a valid phone number';
+            errors.telErr = telRegex.test(value) ? '' : 'Please enter a valid number';
             break;
         case 'location':
             break;
@@ -41,6 +42,30 @@ export default class PersonalLoan extends React.Component {
         errors,
     });
 }
+
+handleFocusBack = (e) => {
+
+    e.preventDefault();
+
+    let errors = this.state;
+
+    const {name, value} = e.target;
+
+    switch(name) {
+        case 'fullName':
+            errors.nameErr = '';
+            break;
+        case 'phone':
+            errors.telErr = '';
+            break;
+        case 'location':
+            break;
+    }
+
+    this.setState({
+        errors,
+    });    
+}
     render() {
     return (
         <div>
@@ -48,26 +73,25 @@ export default class PersonalLoan extends React.Component {
             <div id="plContainer">
                 <form id="plForm">
                     <h2>Personal Loan - Compare and Apply Online</h2>
-                    <p>Choose the best offers from top banks!</p>
                     <div id="plFormControls">
 
                         <div className="plFormGroup">
                         <label htmlFor="fullName">
                             Full name:
                         </label>
-                        <input type="text" name="fullName" onBlur={this.handleChange}/>
+                        <input type="text" name="fullName" onBlur={this.handleChange} onFocus={this.handleFocusBack}/>
                         </div>
 
-                        {this.state.nameErr ? <span className="err">{this.state.nameErr}</span> : ''}
+                        {this.state.nameErr ? <span className="err">{this.state.nameErr}</span> : <span className="err">&nbsp;</span>}
 
                         <div className="plFormGroup">
                         <label htmlFor="phone">
                             Phone:
                         </label>
-                        <input type="tel" name="phone" onBlur={this.handleChange}/>
+                        <input type="tel" name="phone" onBlur={this.handleChange} onFocus={this.handleFocusBack}/>
                         </div>
 
-                        {this.state.telErr ? <span className="err">{this.state.telErr}</span> : ''}
+                        {this.state.telErr ? <span className="err">{this.state.telErr}</span> : <span className="err">&nbsp;</span>}
 
                         <div className="plFormGroup">
                         <label htmlFor="location">
@@ -76,12 +100,16 @@ export default class PersonalLoan extends React.Component {
                         <input type="text" name="location" />
                         </div>
 
+                        <span className="err">&nbsp;</span>
+
                         <div className="plFormGroup">
                         <label htmlFor="location">
                             Loan Amount:
                         </label>
                         <input type="number" name="location" />
                         </div>
+
+                        <span className="err">&nbsp;</span>
 
                         <div className="plFormGroup">
                         <label htmlFor="location">
@@ -90,6 +118,8 @@ export default class PersonalLoan extends React.Component {
                         <input type="text" name="location" />
                         </div>
 
+                        <span className="err">&nbsp;</span>
+
                         <div className="plFormGroup">
                         <label htmlFor="location">
                             Monthly Income:
@@ -97,12 +127,16 @@ export default class PersonalLoan extends React.Component {
                         <input type="text" name="location" />
                         </div>
 
+                        <span className="err">&nbsp;</span>
+
                         <div className="plFormGroup">
                         <label htmlFor="location">
                             Best time to contact:
                         </label>
                         <input type="text" name="location" />
                         </div>
+
+                        <span className="err">&nbsp;</span>
 
                     </div>
                     <input type="submit" value="SUBMIT" id="plSubmit"/>
@@ -115,7 +149,8 @@ export default class PersonalLoan extends React.Component {
                         </div>
                     </Carousel>
                 </div>
-            </div>            
+            </div>    
+            <Why />   
         </div>
     )
     }

@@ -17,9 +17,9 @@
     justify-content: center;
     min-width: 25rem;
     min-height: 25rem;
-    background: rgb(255, 255, 255);
+    background: rgba(0,0,0,0.05);
     border: 5px solid rgba(0,0,0,0.1);
-    border-radius: 50%;
+    border-radius: 15%;
     margin: auto;
     font-family: 'Roboto';
     color: rgb(68,182,83);
@@ -36,6 +36,70 @@
 }
 
 .offerLogo {
+    align-self: center;
+    margin: 0 0 5% 0;
+    width: 25%;
+    height: 25%;
+}
+
+
+//Mobile responsiveness
+
+#mOffer {
+    display: none;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+    #offer {
+        display: none;
+    }
+
+    #mOffer {
+        display: flex;
+    }
+}
+
+#mOfferTitle {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#mOfferContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 0 5% 0;
+}
+
+.mOfferCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 80%;
+    background: rgba(0,0,0,0.05);
+    border: 5px solid rgba(0,0,0,0.1);
+    border-radius: 15%;
+    margin: 0 0 5% 0;
+    font-family: 'Roboto';
+    color: rgb(68,182,83);
+    padding: 4%;
+    //box-shadow: 2px 4px 5px rgba(0,0,0,0.4);
+}
+
+.mOfferCard > h4 {
+    font-size: 2.6rem;
+    margin: 0;
+}
+
+.mOfferCard > p {
+    font-size: 1.2rem;;
+}
+
+.mOfferLogo {
     align-self: center;
     margin: 0 0 5% 0;
     width: 25%;

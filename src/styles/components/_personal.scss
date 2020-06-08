@@ -15,16 +15,10 @@
     text-align: center;
 }
 
+
 #plForm > h2 {
     font-family: 'Roboto', sans-serif;
-}
-
-#plForm > p {
-    font-family: sans-serif;
-}
-
-#plForm > h2,p {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     padding: 0;
 }
 
@@ -35,9 +29,13 @@
 }
 
 .plFormGroup {
-    margin: 0.6rem;
+    //margin: 1rem;
     display: flex;
     justify-content: space-between;
+}
+
+.plFormGroup > label {
+    text-align: left;
 }
 
 .plFormGroup > input {
@@ -45,8 +43,8 @@
     background: #5aa8d4;
     border: 0.1px solid white;
     border-radius: 3px;
-    height: 1.6rem;
-    padding: 0.5rem;
+    height: 1.4rem;
+    padding: 0.3rem;
 }
 
 #plSubmit {
@@ -61,8 +59,9 @@
 .err {
     font-family: sans-serif;
     font-size: 1rem;
-    margin-left: 10rem;
+    margin: 0.4rem 0 0.4rem 10rem;
     color: rgb(149, 36, 36);
+    padding: 0;
 }
 
 #plCarousel {
