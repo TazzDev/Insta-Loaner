@@ -112,6 +112,9 @@ const MobileHeader = () => (
             <NavLink to="/home-loan" activeClassName="is-active" className="mNavlinks">HOME LOAN</NavLink>
             <NavLink to="/business-loan" activeClassName="is-active" className="mNavlinks">BUSINESS LOAN</NavLink>
             <NavLink to="/loan-against-property" activeClassName="is-active" className="mNavlinks">PROPERTY LOAN</NavLink>
+            <hr style={{width:"100%", marginBottom:"15%"}}/>
+            <NavLink to="/credit-score" activeClassName="is-active" className="mNavlinks">CREDIT SCORE</NavLink>
+            <NavLink to="/emi-calculator" activeClassName="is-active" className="mNavlinks">CALCULATE EMI</NavLink>
           </div>
         </Menu>
         <hr id="mHeadLine"/>
