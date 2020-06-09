@@ -1,0 +1,95 @@
+
+#score {
+    display: flex;
+}
+
+#scoreContainer {
+    max-width: 45%;
+    max-height: 65vh;
+    overflow-x:hidden;
+    overflow-y: auto;
+    background: rgb(235, 233, 233);
+    border-radius: 25px;
+    text-align: center;
+    margin: 5% 5% 5% 5%;
+    color: black;
+    padding: 0 1% 0 1%;
+    font-family: sans-serif;
+    border: 5px solid #44ad95;
+}
+
+#scoreContainer > h4,p {
+    font-family: sans-serif;
+}
+
+#scoreContainer > h4 {
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+#scoreContainer ul li {
+    letter-spacing: 0.5px;
+    word-spacing: 3px;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+#scoreContainer > p {
+    letter-spacing: 0.5px;
+    word-spacing: 3px;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+
+//Form for credit score
+
+#scoreForm {
+    margin: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 20%;
+    height: 100%;
+    background: linear-gradient(rgb(24, 132, 182),rgb(159, 205, 243));
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 2px rgb(0,0,0);
+    padding: 2rem;
+    text-align: center;
+}
+
+#scoreForm > h4 {
+   align-self: center;
+   font-family: sans-serif;
+   letter-spacing: 2px;
+   font-size: 1.5rem;
+}
+
+.scoreFormGroup {
+   width: 100%;
+   padding: 3%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.scoreFormGroup > input {
+    width: 18rem;
+    background: #5aa8d4;
+    border: 0.1px solid white;
+    border-radius: 8px;
+    height: 1.4rem;
+    padding: 0.3rem;
+}
+
+#scoreButton {
+    align-self: center;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background: #44ad95;
+    border-radius: 2px;
+    padding: 1rem;
+    margin-top: 2rem;
+}

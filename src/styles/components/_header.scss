@@ -44,6 +44,59 @@ nav {
 
 //begin dropdown styling
 
+#loandropmenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 37%;
+    top: 12.5%;
+    z-index: 1;
+    width: 10%;
+    border: 2px solid rgba(0,0,0,0.7);
+    border-radius: 15px;
+}
+
+
+#loanbtn:hover {
+    #loandropmenu {
+        display: flex;
+    }
+}
+
+.dropitem {
+    text-decoration: none;
+    color: #02f9c2;
+    font-size: 1.2rem;
+    padding: 10px;
+    background: black;
+    //border-radius: inherit;
+}
+
+.dropitem:hover {
+    background: rgba(121, 121, 121, 0.835);
+}
+
+//Financial tools dropdown begin
+
+#findropmenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 20%;
+    top: 12.5%;
+    z-index: 1;
+    width: 10%;
+    border: 2px solid rgba(0,0,0,0.7);
+    border-radius: 15px;
+}
+
+#finbtn:hover {
+    #findropmenu {
+        display: flex;
+    }
+}
+
+//Financial tools dropdown end
 
 //end dropdown styling
 
@@ -85,5 +138,17 @@ nav {
     box-shadow: 1px 1px rgba(172,172,172,0.2);
 }
 
+
+.mNavlinks {
+    padding: 7%;
+    min-width: 100%;
+    background: rgba(121, 121, 121, 0.835);
+    border-radius: 15px;
+    margin: 0 0 15% 0;
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    //align-self: center;
+}
 
 

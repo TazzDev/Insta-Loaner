@@ -1,5 +1,7 @@
 import React from 'react';
 import Why from '../components/Why';
+import PLSubmit from '../components/PLSubmit';
+import {withRouter} from 'react-router-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
 import C1 from '../../public/images/carousel/c1.jpg';
@@ -49,7 +51,7 @@ handleFocusBack = (e) => {
 
     let errors = this.state;
 
-    const {name, value} = e.target;
+    const {name} = e.target;
 
     switch(name) {
         case 'fullName':
@@ -66,12 +68,19 @@ handleFocusBack = (e) => {
         errors,
     });    
 }
+
+submitForm = (e) => {
+    e.preventDefault();
+
+    this.props.history.push(`/personal-loan-submit?amt=${document.getElementById('amount').value}&inc=${document.getElementById('income').value}&loc=${document.getElementById('location').value}&name=${document.getElementById('fullName').value}&phn=${document.getElementById('phone').value}&emp=${document.getElementById('employment').value}&tme=${document.getElementById('time').value}`)
+
+}
     render() {
     return (
         <div>
             <div className="background"></div>
             <div id="plContainer">
-                <form id="plForm">
+                <form id="plForm" onSubmit={this.submitForm}>
                     <h2>Personal Loan - Compare and Apply Online</h2>
                     <div id="plFormControls">
 
@@ -79,7 +88,7 @@ handleFocusBack = (e) => {
                         <label htmlFor="fullName">
                             Full name:
                         </label>
-                        <input type="text" name="fullName" onBlur={this.handleChange} onFocus={this.handleFocusBack}/>
+                        <input type="text" name="fullName" id="fullName" onBlur={this.handleChange} onFocus={this.handleFocusBack}/>
                         </div>
 
                         {this.state.nameErr ? <span className="err">{this.state.nameErr}</span> : <span className="err">&nbsp;</span>}
@@ -88,7 +97,7 @@ handleFocusBack = (e) => {
                         <label htmlFor="phone">
                             Phone:
                         </label>
-                        <input type="tel" name="phone" onBlur={this.handleChange} onFocus={this.handleFocusBack}/>
+                        <input type="tel" name="phone" id="phone" onBlur={this.handleChange} onFocus={this.handleFocusBack}/>
                         </div>
 
                         {this.state.telErr ? <span className="err">{this.state.telErr}</span> : <span className="err">&nbsp;</span>}
@@ -97,49 +106,50 @@ handleFocusBack = (e) => {
                         <label htmlFor="location">
                             Location:
                         </label>
-                        <input type="text" name="location" />
+                        <input type="text" name="location" id="location"/>
                         </div>
 
                         <span className="err">&nbsp;</span>
 
                         <div className="plFormGroup">
-                        <label htmlFor="location">
+                        <label htmlFor="amount">
                             Loan Amount:
                         </label>
-                        <input type="number" name="location" />
+                        <input type="number" name="amount" id="amount"/>
                         </div>
 
                         <span className="err">&nbsp;</span>
 
                         <div className="plFormGroup">
-                        <label htmlFor="location">
+                        <label htmlFor="employment">
                             Employment Type:
                         </label>
-                        <input type="text" name="location" />
+                        <input type="text" name="employment" id="employment"/>
                         </div>
 
                         <span className="err">&nbsp;</span>
 
                         <div className="plFormGroup">
-                        <label htmlFor="location">
+                        <label htmlFor="income">
                             Monthly Income:
                         </label>
-                        <input type="text" name="location" />
+                        <input type="number" name="income" id="income"/>
                         </div>
 
                         <span className="err">&nbsp;</span>
 
                         <div className="plFormGroup">
-                        <label htmlFor="location">
+                        <label htmlFor="time">
                             Best time to contact:
                         </label>
-                        <input type="text" name="location" />
+                        <input type="text" name="time" id="time"/>
                         </div>
 
                         <span className="err">&nbsp;</span>
 
                     </div>
                     <input type="submit" value="SUBMIT" id="plSubmit"/>
+
                 </form>
                 <div id="plCarousel">
                     <Carousel>

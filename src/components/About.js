@@ -4,7 +4,7 @@ const About = () => (
     <React.Fragment>
         <MAbout />
     <div id="aboutPage">
-        <div className="background"></div>
+    <div className="background"></div>
         <div id="aboutCard">
             <div id="aboutTitle">
                 <h4>Insta Loaner</h4>
@@ -21,6 +21,7 @@ tailoring them to our customers need.
             </div>
         </div>
     </div>
+
     </React.Fragment>
 )
 

@@ -21,11 +21,26 @@ const Header = () => (
     
         <nav>
             <NavLink to="/about" activeClassName="is-active" className="navlinks">ABOUT US</NavLink>
-                <span className="navlinks"  id="loanbtn">
-              LOANS
+                <span className="navlinks" id="loanbtn">
+                  LOANS
+
+                  <div id="loandropmenu">
+                    <NavLink to="/personal-loan" activeClassName="is-active" className="dropitem">Personal Loan</NavLink>
+                    <NavLink to="/home-loan" activeClassName="is-active" className="dropitem">Home Loan</NavLink>
+                    <NavLink to="/business-loan" activeClassName="is-active" className="dropitem">Business Loan</NavLink>
+                    <NavLink to="/loan-against-property" activeClassName="is-active" className="dropitem">Loan against Property</NavLink>
+                  </div>
+
                 </span>
 
-            <span className="navlinks">FINANCIAL SERVICES</span>
+            <span className="navlinks" id="finbtn">
+              FINANCIAL SERVICES
+              
+              <div id="findropmenu">
+                    <NavLink to="/emi-calculator" activeClassName="is-active" className="dropitem">Calculate EMI</NavLink>
+                    <NavLink to="/credit-score" activeClassName="is-active" className="dropitem">Credit Score</NavLink>
+                  </div>
+              </span>
             <NavLink to="/join-as-partner" activeClassName="is-active" className="navlinks">JOIN AS PARTNER</NavLink>
         </nav>
     </header>
@@ -73,6 +88,7 @@ var styles = {
       fill: '#373a47'
     },
     bmItemList: {
+      
       color: '#b8b7ad',
       padding: '0.8em'
     },
@@ -89,7 +105,14 @@ const MobileHeader = () => (
         
         <NavLink to="/" activeClassName="is-active"><img src={Logo} className="mLogo" /></NavLink>
         <Menu styles={styles} right>
-        <NavLink to="/about" activeClassName="is-active" className="navlinks">ABOUT US</NavLink>
+          <div style={{display:"flex",flexDirection:"column",outline:"none"}}>
+            <NavLink to="/about" activeClassName="is-active" className="mNavlinks">ABOUT US</NavLink>
+            <NavLink to="/join-as-partner" activeClassName="is-active" className="mNavlinks">JOIN AS PARTNER</NavLink>
+            <NavLink to="/personal-loan" activeClassName="is-active" className="mNavlinks">PERSONAL LOAN</NavLink>
+            <NavLink to="/home-loan" activeClassName="is-active" className="mNavlinks">HOME LOAN</NavLink>
+            <NavLink to="/business-loan" activeClassName="is-active" className="mNavlinks">BUSINESS LOAN</NavLink>
+            <NavLink to="/loan-against-property" activeClassName="is-active" className="mNavlinks">PROPERTY LOAN</NavLink>
+          </div>
         </Menu>
         <hr id="mHeadLine"/>
     </div>
