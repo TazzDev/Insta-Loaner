@@ -56,7 +56,7 @@ const Header = () => (
 
 var styles = {
     bmBurgerButton: {
-      position: 'fixed',
+      position: 'absolute',
       width: '36px',
       height: '30px',
       right: '36px',
@@ -105,16 +105,17 @@ const MobileHeader = () => (
         
         <NavLink to="/" activeClassName="is-active"><img src={Logo} className="mLogo" /></NavLink>
         <Menu styles={styles} right>
-          <div style={{display:"flex",flexDirection:"column",outline:"none"}}>
-            <NavLink to="/about" activeClassName="is-active" className="mNavlinks">ABOUT US</NavLink>
-            <NavLink to="/join-as-partner" activeClassName="is-active" className="mNavlinks">JOIN AS PARTNER</NavLink>
-            <NavLink to="/personal-loan" activeClassName="is-active" className="mNavlinks">PERSONAL LOAN</NavLink>
-            <NavLink to="/home-loan" activeClassName="is-active" className="mNavlinks">HOME LOAN</NavLink>
-            <NavLink to="/business-loan" activeClassName="is-active" className="mNavlinks">BUSINESS LOAN</NavLink>
-            <NavLink to="/loan-against-property" activeClassName="is-active" className="mNavlinks">PROPERTY LOAN</NavLink>
+          <div style={{display:"flex",flexDirection:"column",outline:"none",width:"90%"}}>
+            <NavLink to="/" activeClassName="is-active" className="mNavlinks">Home</NavLink>
+            <NavLink to="/about" activeClassName="is-active" className="mNavlinks">About Us</NavLink>
+            <NavLink to="/join-as-partner" activeClassName="is-active" className="mNavlinks">Join as Partner</NavLink>
+            <NavLink to="/personal-loan" activeClassName="is-active" className="mNavlinks">Personal Loan</NavLink>
+            <NavLink to="/home-loan" activeClassName="is-active" className="mNavlinks">Home Loan</NavLink>
+            <NavLink to="/business-loan" activeClassName="is-active" className="mNavlinks">Business Loan</NavLink>
+            <NavLink to="/loan-against-property" activeClassName="is-active" className="mNavlinks">Property Loan</NavLink>
             <hr style={{width:"100%", marginBottom:"15%"}}/>
-            <NavLink to="/credit-score" activeClassName="is-active" className="mNavlinks">CREDIT SCORE</NavLink>
-            <NavLink to="/emi-calculator" activeClassName="is-active" className="mNavlinks">CALCULATE EMI</NavLink>
+            <NavLink to="/credit-score" activeClassName="is-active" className="mNavlinks">Credit Score</NavLink>
+            <NavLink to="/emi-calculator" activeClassName="is-active" className="mNavlinks">Calculate EMI</NavLink>
           </div>
         </Menu>
         <hr id="mHeadLine"/>

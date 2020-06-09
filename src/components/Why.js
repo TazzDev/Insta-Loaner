@@ -5,8 +5,9 @@ import Ben3 from '../../public/images/ben3.png';
 import Ben4 from '../../public/images/ben4.png';
 
 
-const Why = () => {
+export const Why = () => {
     return (
+        <React.Fragment>
         <div id="whyContainer" >
             <div id="content">
                 <h1>Why Choose Us?</h1><hr/>
@@ -43,8 +44,45 @@ Compare from various offering on our platform</p>
                 </div>
             </div>
         </div>
+        </React.Fragment>
     )
 };
 
+export const WhyPartial = () => (
+    <div id="whyPartContainer" >
+            <div id="content">
+                <div id="benefits">
+                    <span className="partbenefit">
+                    <img src={Ben1} className="benpic"></img>
+                    <h3>2 Step Loan Process</h3>
+                    <p>Register – Share your basic details like – 
+                        Name mobile and location Offers – Our team will contact you directly. 
+                        Choose the right option as per your need</p>
+                    </span>
 
-export default Why;
+                    <span className="partbenefit">
+                    <img src={Ben2} className="benpic"></img>
+                    <h3>Best Rate of Interest</h3>
+                    <p>Banks provides the best option available basis your profile
+                        Compare from various offering on our platform</p>
+                    </span>
+
+                    <span className="partbenefit">
+                    <img src={Ben3} className="benpic"></img>
+                    <h3>Best Rate of Interest</h3>
+                    <p>Banks provides the best option available basis your profile
+                        Compare from various offering on our platform</p>
+                    </span>
+
+                    <span className="partbenefit">
+                    <img src={Ben4} className="benpic"></img>
+                    <h3>Best Rate of Interest</h3>
+                    <p>Banks provides the best option available basis your profile
+Compare from various offering on our platform</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+);
+
+

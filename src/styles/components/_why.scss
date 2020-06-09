@@ -41,6 +41,24 @@
     line-height: 2rem;
 }
 
+
+//partial why component
+
+#whyPartContainer {
+    max-width: 60%;
+    margin-left: 8%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.partbenefit {
+    display: flex;
+    flex-direction: column;
+    max-width: 15rem;
+    margin: 5rem;
+}
 //Mobile responsiveness
 
 @media (max-width: 768px) {

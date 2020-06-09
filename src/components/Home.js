@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Why from './Why';
+import {Why} from './Why';
 import Compare from './Compare';
 import Offers from './Offers';
 import Personal from '../../public/images/Personal.png';
@@ -80,7 +80,7 @@ const MobileHome = () => (
             <p>Compare & apply for personalized loans with leading lenders and choose with ease</p>
         </div>
 
-        <button id="mHomeButton">Apply Now</button>
+        <NavLink id="mHomeButton" to="/personal-loan">Apply Now</NavLink>
 
         <div className="mLinkSection">
             <NavLink to="/personal-loan" className="mLinkLogo">
@@ -101,7 +101,7 @@ const MobileHome = () => (
         <div className="mLinkSection">
 
             <NavLink to="/personal-loan" className="mLinkLogo">
-                <img src={Personal}></img>
+                <img src={Property}></img>
                 <p>Property Loan</p>
             </NavLink>
 
