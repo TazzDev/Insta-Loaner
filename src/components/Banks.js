@@ -16,7 +16,9 @@ import Fourteen from '../../public/images/icons/14.svg';
 
 const Banks = () => {
     return (
-        <div id="iconContainer">
+        <React.Fragment>
+            <MBanks />
+        <div className="iconContainer">
             <img src={One} alt="text" className="bankIcon"/>
             <img src={Two} alt="text" className="bankIcon"/>
             <img src={Three} alt="text" className="bankIcon"/>
@@ -31,6 +33,40 @@ const Banks = () => {
             <img src={Twelve} alt="text" className="bankIcon"/>
             <img src={Thirteen} alt="text" className="bankIcon"/>
             <img src={Fourteen} alt="text" className="bankIcon"/>
+            <img src={Five} alt="text" className="bankIcon"/>
+        </div>
+        </React.Fragment>
+    )
+}
+
+const MBanks = () => {
+    return (
+        <div id="mBankContainer">
+        <div className="mIconContainer">
+            <img src={One} alt="text" className="mBankIcon"/>
+            <img src={Two} alt="text" className="mBankIcon"/>
+            <img src={Three} alt="text" className="mBankIcon"/>
+        </div>
+        <div className="mIconContainer">
+            <img src={Four} alt="text" className="mBankIcon"/>
+            <img src={Five} alt="text" className="mBankIcon"/>
+            <img src={Six} alt="text" className="mBankIcon"/>
+        </div>
+        <div className="mIconContainer">
+            <img src={Seven} alt="text" className="mBankIcon"/>
+            <img src={Eight} alt="text" className="mBankIcon"/>
+            <img src={Nine} alt="text" className="mBankIcon"/>
+        </div>
+        <div className="mIconContainer">
+            <img src={Ten} alt="text" className="mBankIcon"/>
+            <img src={Eleven} alt="text" className="mBankIcon"/>
+            <img src={Twelve} alt="text" className="mBankIcon"/>
+        </div>
+        <div className="mIconContainer">
+            <img src={Thirteen} alt="text" className="mBankIcon"/>
+            <img src={Fourteen} alt="text" className="mBankIcon"/>
+            <img src={Five} alt="text" className="mBankIcon"/>
+        </div>
         </div>
     )
 }

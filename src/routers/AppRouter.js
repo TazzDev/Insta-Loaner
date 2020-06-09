@@ -36,7 +36,7 @@ const AppRouter = () => (
             <Route path="/business-loan" component={BusinessLoan} />
             <Route path="/business-loan-submit" component={BLSubmit} />
 
-            <Route path="/property-loan" component={PropertyLoan} />
+            <Route path="/loan-against-property" component={PropertyLoan} />
             <Route path="/property-loan-submit" component={PRLSubmit} />
 
             <Route path="/emi-calculator" component={EMICalculator} />

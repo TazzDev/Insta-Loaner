@@ -1,22 +1,42 @@
+.iconContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .bankIcon {
-    margin: 1rem;
+    margin: 3rem;
     height: 5rem;
     width: 5rem;
-    border: 1px solid rgba(168, 168, 168, 0.418);
+    //border: 1px solid rgba(168, 168, 168, 0.418);
     border-radius: 50%;
+}
+
+#mBankContainer {
+    display: none;
+    flex-direction: column;
 }
 
 //Mobile responsiveness
 
 @media (max-width: 768px) {
-    #iconContainer {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
+    .iconContainer {
+        display: none;
     }
 
-    .bankIcon {
-        height: 15%;
-        width: 15%;
+    #mBankContainer {
+        display: flex;
     }
+
+    .mBankIcon {
+        height: 20%;
+        width: 20%;
+        margin: 5%;
+    }
+}
+
+.mIconContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

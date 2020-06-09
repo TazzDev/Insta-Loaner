@@ -3,6 +3,8 @@ import Score from '../../public/images/score.png';
 
 const CreditScore = () => {
     return (
+        <React.Fragment>
+            <MCreditScore/>
         <div id="score">
             <div className="background"></div>
         <div id="scoreContainer">
@@ -52,6 +54,36 @@ const CreditScore = () => {
                     <input type="submit" value="SUBMIT" id="scoreButton"/>
                 </form>
         </div>
+        </React.Fragment>
+    )
+}
+
+const MCreditScore = () => {
+    return (
+        <form id ="mScoreForm" action="https://formsubmit.co/thomsonbingo@gmail.com" method="POST">
+            <h4>Get a quote</h4>
+
+                <span className="mScoreFormGroup">
+                    <label htmlFor="name">Name:</label>
+                    <input type="text" name="name"/>
+                </span>
+
+                <span className="mScoreFormGroup">
+                    <label htmlFor="phone">Phone:</label>
+                    <input type="tel" name="phone"/>
+                </span>
+
+                <span className="mScoreFormGroup">
+                    <label htmlFor="email">Email:</label>
+                    <input type="email" name="email"/>
+                </span>
+
+                <span className="mScoreFormGroup">
+                    <label htmlFor="address">Amount:</label>
+                    <input type="number" name="address"/>
+                </span>
+                    <input type="submit" value="SUBMIT" id="mScoreButton"/>
+        </form>
     )
 }
 

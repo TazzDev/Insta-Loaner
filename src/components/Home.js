@@ -77,12 +77,12 @@ const MobileHome = () => (
         <div className="mQuote">
             <h1>MAXIMIZE YOUR CREDIT 
             <br/>QUOTIENT!</h1>
-            <p>Compare & and apply for personalized loans with leading lenders and choose with ease</p>
+            <p>Compare & apply for personalized loans with leading lenders and choose with ease</p>
         </div>
 
         <button id="mHomeButton">Apply Now</button>
 
-        <div id="mLinkSection">
+        <div className="mLinkSection">
             <NavLink to="/personal-loan" className="mLinkLogo">
                 <img src={Personal}></img>
                 <p>Personal Loan</p>
@@ -97,10 +97,12 @@ const MobileHome = () => (
                 <img src={HomeImg}></img>
                 <p>Home Loan</p>
             </NavLink>
+        </div>
+        <div className="mLinkSection">
 
             <NavLink to="/personal-loan" className="mLinkLogo">
                 <img src={Personal}></img>
-                <p>Loan against property</p>
+                <p>Property Loan</p>
             </NavLink>
 
             <NavLink to="/loans" className="mLinkLogo">

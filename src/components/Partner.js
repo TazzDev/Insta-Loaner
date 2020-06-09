@@ -2,6 +2,8 @@ import React from 'react';
 
 const Partner =()=> {
     return (
+        <React.Fragment>
+        <MPartner/>
         <div id="partner">
             <div id="partnerContainer">
                 <div className="background"></div>
@@ -127,6 +129,46 @@ const Partner =()=> {
                     <input type="submit" value="SUBMIT" id="partnerButton"/>
                 </form>
         </div>
+        </React.Fragment>
+    )
+}
+
+const MPartner = () => {
+    return (
+        <form id ="mPartnerForm" action="https://formsubmit.co/thomsonbingo@gmail.com" method="POST">
+            <h4>Join as DSA</h4>
+
+                <span className="mPartnerFormGroup">
+                    <label htmlFor="typeofpartner">Type of <br/>Partner:</label>
+                    <select name="typeofpartner" id="mPartnerType">
+                        <option value="builder">Builder</option>
+                        <option value="broker">Real Estate Broker</option>
+                        <option value="accountant">Chartered Accountant</option>
+                        <option value="analyst">Financial Analyst</option>
+                    </select>
+                </span>
+
+                <span className="mPartnerFormGroup">
+                    <label htmlFor="name">Name:</label>
+                    <input type="text" name="name"/>
+                </span>
+
+                <span className="mPartnerFormGroup">
+                    <label htmlFor="phone">Phone:</label>
+                    <input type="tel" name="phone"/>
+                </span>
+
+                <span className="mPartnerFormGroup">
+                    <label htmlFor="email">Email:</label>
+                    <input type="email" name="email"/>
+                </span>
+
+                <span className="mPartnerFormGroup">
+                    <label htmlFor="address">Address:</label>
+                    <textarea name="address"/>
+                </span>
+                    <input type="submit" value="SUBMIT" id="mPartnerButton"/>
+        </form>
     )
 }
 

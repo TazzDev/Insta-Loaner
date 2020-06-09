@@ -93,3 +93,52 @@
     padding: 1rem;
     margin-top: 2rem;
 }
+
+// Mobile responsiveness
+
+#mScoreForm {
+    display: none;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 7%;
+    margin: 7% 7% 0 7%;
+    background: rgba(0,209,161,0.3);
+    border-radius: 20px;
+}
+
+#mScoreForm > h4 {
+    font-size: 1.4rem;
+    color: #00d1a1;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #score {
+        display: none;
+    }
+    #mScoreForm {
+        display: flex;
+    }
+}
+
+.mScoreFormGroup {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10%;
+    justify-content: space-between;
+}
+
+.mScoreFormGroup > input{
+    width: 50%;
+    border-radius: 10px;
+    height: 15%;
+}
+
+#mScoreButton {
+    width: 50%;
+    background: linear-gradient(rgb(0,209,161),rgb(109, 189, 170));
+    height: 3rem;
+    border: transparent;
+    align-self: center;
+    border-radius: 15px;
+}
