@@ -1,7 +1,5 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
-import Logo from '../../public/images/il.png';
-import MLogo from '../../public/images/il1.png';
 import {slide as Menu} from 'react-burger-menu';
 
 
@@ -16,7 +14,7 @@ const Header = () => (
                 marginLeft: "5%"
                 }}>
 
-            <img src={Logo} className="logo"></img>
+            <img src="https://assets-insta-loaner.s3.ap-south-1.amazonaws.com/il.png" className="logo"></img>
             
             </NavLink>
     
@@ -104,7 +102,7 @@ var styles = {
 const MobileHeader = () => (
     <div id="mHeader">
         
-        <NavLink to="/" activeClassName="is-active"><img src={MLogo} className="mLogo" /></NavLink>
+        <NavLink to="/" activeClassName="is-active"><img src="https://assets-insta-loaner.s3.ap-south-1.amazonaws.com/il1.png" className="mLogo" /></NavLink>
         <Menu styles={styles} right>
           <div style={{display:"flex",flexDirection:"column",outline:"none",width:"90%"}}>
             <NavLink to="/" activeClassName="is-active" className="mNavlinks">Home</NavLink>
