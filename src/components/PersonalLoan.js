@@ -77,7 +77,8 @@ submitForm = (e) => {
 }
     render() {
     return (
-        <React.Fragment> <MPersonalLoan />
+        <React.Fragment>{window.scrollTo(0,0)}
+            <MPersonalLoan />
         <div id="mainContainer">
             <div className="background"></div>
             <div id="plContainer">

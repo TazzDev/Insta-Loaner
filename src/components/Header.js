@@ -1,6 +1,7 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom';
 import Logo from '../../public/images/il.png';
+import MLogo from '../../public/images/il1.png';
 import {slide as Menu} from 'react-burger-menu';
 
 
@@ -103,7 +104,7 @@ var styles = {
 const MobileHeader = () => (
     <div id="mHeader">
         
-        <NavLink to="/" activeClassName="is-active"><img src={Logo} className="mLogo" /></NavLink>
+        <NavLink to="/" activeClassName="is-active"><img src={MLogo} className="mLogo" /></NavLink>
         <Menu styles={styles} right>
           <div style={{display:"flex",flexDirection:"column",outline:"none",width:"90%"}}>
             <NavLink to="/" activeClassName="is-active" className="mNavlinks">Home</NavLink>

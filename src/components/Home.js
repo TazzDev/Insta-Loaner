@@ -7,6 +7,8 @@ import Personal from '../../public/images/Personal.png';
 import Business from '../../public/images/Business.png';
 import HomeImg from '../../public/images/Home.png';
 import Property from '../../public/images/Property.png';
+import CreditScore from '../../public/images/CreditScore.png';
+import CreditCard from '../../public/images/CreditCard.png';
 
 const Home = () => {
     return (
@@ -106,12 +108,12 @@ const MobileHome = () => (
             </NavLink>
 
             <NavLink to="/loans" className="mLinkLogo">
-                <img src={Business}></img>
+                <img src={CreditScore}></img>
                 <p>Credit Score</p>
             </NavLink>
 
             <NavLink to="/loans" className="mLinkLogo">
-                <img src={HomeImg}></img>
+                <img src={CreditCard}></img>
                 <p>Credit Card</p>
             </NavLink>
         </div>
