@@ -177,7 +177,7 @@
     animation-fill-mode: forwards;
 }
 
-#mFormOption {
+.mFormOption {
     width: 100%;
     height: 2.1rem;
     border: none;
@@ -187,7 +187,7 @@
 
 }
 
-#mFormOption:focus {
+.mFormOption:focus {
     outline: none;
     animation-name: innerBorder;
     animation-duration: 500ms;

@@ -1,8 +1,8 @@
 import React from 'react';
 
-const BankBox = (props) => (
-
-    <div className="bankbox">
+const BankBox = (props) => {
+    const roi = props.roi.slice(0,4);
+    return (<div className="bankbox">
                     <img src={props.icon} alt="logo" className="bankLogo"/>
 
                     <span className="bankProp" >
@@ -19,7 +19,7 @@ const BankBox = (props) => (
 
                     <span className="bankProp" >
                         <p style={{color:"rgba(0,0,0,0.6)"}}>EMI</p>
-                        <p>{(props.amount + (props.amount*props.roi/100))/props.term}</p>
+                        <p>{(props.amount + (props.amount*roi/100))/props.term}</p>
                     </span>
 
                     <span className="bankProp" >
@@ -31,10 +31,10 @@ const BankBox = (props) => (
 
                     <span className="bankProp">
                         <p style={{color:"rgba(0,0,0,0.6)"}}>Total interest</p>
-                        <p>{props.amount + (props.amount*props.roi/100)+props.procFee}</p>
+                        <p>{props.amount + (props.amount*roi/100)+props.procFee}</p>
                     </span>
 
-                </div>
-)
+                </div>)
+}
 
 export default BankBox;

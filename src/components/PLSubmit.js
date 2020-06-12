@@ -3,7 +3,12 @@ import queryString from 'query-string';
 import Slider from 'react-rangeslider';
 import BankBox from './BankBox';
 
-import YesBank from '../../public/images/bankIcons/yesbank.png';
+import YesBank from '../../public/images/bankIcons/personal/yesbank.png';
+import AxisBank from '../../public/images/bankIcons/personal/axisbank.png';
+import IciciBank from '../../public/images/bankIcons/personal/icicibank.png';
+import KotakBank from '../../public/images/bankIcons/personal/kotakbank.png';
+import RBLBank from '../../public/images/bankIcons/personal/rblbank.png';
+
 
 import 'react-rangeslider/lib/index.css'
 
@@ -132,9 +137,15 @@ export default class PLSubmit extends React.Component {
 
             <div id="bankOffers">
 
-                <BankBox icon={YesBank} name="Yes Bank" roi="10.99" procFee={56} amount={amtValue} term={trmValue}/>
+                <BankBox icon={YesBank} name="Yes Bank" roi="10.99% - 15%" procFee={999} amount={amtValue} term={trmValue}/>
 
+                <BankBox icon={AxisBank} name="Axis Bank" roi="11.25% - 24%" procFee={999} amount={amtValue} term={trmValue}/>
 
+                <BankBox icon={IciciBank} name="Icici Bank" roi="11.25% - 17.99%" procFee={999} amount={amtValue} term={trmValue}/>
+
+                <BankBox icon={KotakBank} name="Kotak Bank" roi="11.25% - 17.99%" procFee={999} amount={amtValue} term={trmValue}/>
+
+                <BankBox icon={RBLBank} name="RBL Bank" roi="11.25% - 17.99%" procFee={999} amount={amtValue} term={trmValue}/>
             </div>
 
         </div>

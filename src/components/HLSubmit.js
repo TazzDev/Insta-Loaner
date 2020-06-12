@@ -3,7 +3,7 @@ import queryString from 'query-string';
 import Slider from 'react-rangeslider';
 import BankBox from './BankBox';
 
-import YesBank from '../../public/images/bankIcons/yesbank.png';
+import YesBank from '../../public/images/bankIcons/personal/yesbank.png';
 
 import 'react-rangeslider/lib/index.css'
 
