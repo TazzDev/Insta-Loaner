@@ -30,7 +30,11 @@ export default class MPersonalLoan extends React.Component {
 
             <span className="mFormGroup">
                 <label htmlFor="employment" className="mFormLabel">Employment Type:</label>
-                <input type="text" name="employment" id="employment" className="mFormInput" placeholder="your employment"/>
+                <select name="employment" id="employment" className="mFormOption">
+                    <option value='salaried'>Salaried </option>
+                    <option value='self-employed'> Self-Employed </option>
+                    <option value='other'> Other </option>
+                </select>
             </span>
 
             <span className="mFormGroup">

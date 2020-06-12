@@ -19,7 +19,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Banks = () => {
-    AOS.init();
     return (
         <React.Fragment>
             <MBanks />
@@ -45,31 +44,32 @@ const Banks = () => {
 }
 
 const MBanks = () => {
+    AOS.init();
     return (
         <div id="mBankContainer">
-        <div className="mIconContainer" data-aos="fade-left" ata-aos-duration="1000">
-            <img src={One} alt="text" className="mBankIcon"/>
-            <img src={Two} alt="text" className="mBankIcon"/>
-            <img src={Three} alt="text" className="mBankIcon"/>
-            <img src={Four} alt="text" className="mBankIcon"/>
+        <div className="mIconContainer">
+            <img src={One} alt="text" className="mBankIcon" data-aos="fade-in" ata-aos-duration="1000"/>
+            <img src={Two} alt="text" className="mBankIcon" data-aos="fade-in" ata-aos-duration="1000"/>
+            <img src={Three} alt="text" className="mBankIcon" data-aos="fade-in" ata-aos-duration="1000"/>
+            <img src={Four} alt="text" className="mBankIcon" data-aos="fade-in" ata-aos-duration="1000"/>
         </div>
-        <div className="mIconContainer" data-aos="fade-right" ata-aos-duration="1500">
-            <img src={Five} alt="text" className="mBankIcon"/>
-            <img src={Six} alt="text" className="mBankIcon"/>
-            <img src={Seven} alt="text" className="mBankIcon"/>
-            <img src={Eight} alt="text" className="mBankIcon"/>
+        <div className="mIconContainer" >
+            <img src={Five} alt="text" className="mBankIcon" data-aos="fade-in" ata-aos-duration="1500"/>
+            <img src={Six} alt="text" className="mBankIcon" data-aos="fade-in" ata-aos-duration="1500"/>
+            <img src={Seven} alt="text" className="mBankIcon" data-aos="fade-in" ata-aos-duration="1500"/>
+            <img src={Eight} alt="text" className="mBankIcon" data-aos="fade-in" ata-aos-duration="1500"/>
         </div>
-        <div className="mIconContainer" data-aos="fade-left" ata-aos-duration="2000">
-            <img src={Nine} alt="text" className="mBankIcon"/>
-            <img src={Ten} alt="text" className="mBankIcon"/>
-            <img src={Eleven} alt="text" className="mBankIcon"/>
-            <img src={Twelve} alt="text" className="mBankIcon"/>
+        <div className="mIconContainer">
+            <img src={Nine} alt="text" className="mBankIcon" data-aos="fade-in" ata-aos-duration="2000"/>
+            <img src={Ten} alt="text" className="mBankIcon" data-aos="fade-in" ata-aos-duration="2000"/>
+            <img src={Eleven} alt="text" className="mBankIcon" data-aos="fade-in" ata-aos-duration="2000"/>
+            <img src={Twelve} alt="text" className="mBankIcon" data-aos="fade-in" ata-aos-duration="2000"/>
         </div>
-        <div className="mIconContainer" data-aos="fade-right" ata-aos-duration="3000">
-            <img src={Thirteen} alt="text" className="mBankIcon"/>
-            <img src={Fourteen} alt="text" className="mBankIcon"/>
-            <img src={Fifteen} alt="text" className="mBankIcon"/>
-            <img src={Sixteen} alt="text" className="mBankIcon"/>
+        <div className="mIconContainer">
+            <img src={Thirteen} alt="text" className="mBankIcon" data-aos="fade-in" ata-aos-duration="3000"/>
+            <img src={Fourteen} alt="text" className="mBankIcon" data-aos="fade-in" ata-aos-duration="3000"/>
+            <img src={Fifteen} alt="text" className="mBankIcon" data-aos="fade-in" ata-aos-duration="3000"/>
+            <img src={Sixteen} alt="text" className="mBankIcon" data-aos="fade-in" ata-aos-duration="3000"/>
         </div>
         </div>
     )

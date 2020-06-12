@@ -8,6 +8,17 @@ import AxisBank from '../../public/images/bankIcons/personal/axisbank.png';
 import IciciBank from '../../public/images/bankIcons/personal/icicibank.png';
 import KotakBank from '../../public/images/bankIcons/personal/kotakbank.png';
 import RBLBank from '../../public/images/bankIcons/personal/rblbank.png';
+import IndusindBank from '../../public/images/bankIcons/personal/indusindbank.png';
+import IDFCFirstBank from '../../public/images/bankIcons/personal/idfcbank.png';
+import TataCapital from '../../public/images/bankIcons/personal/tata.png';
+import CitiBank from '../../public/images/bankIcons/personal/citibank.png';
+import IndiaBulls from '../../public/images/bankIcons/personal/indiabulls.png';
+import ShubhLoans from '../../public/images/bankIcons/personal/shubhloans.png';
+import Fullerton from '../../public/images/bankIcons/personal/fullerton.jpg';
+import HomeCredit from '../../public/images/bankIcons/personal/homecredit.png';
+import PaySense from '../../public/images/bankIcons/personal/paysense.jpg';
+import Edelweiss from '../../public/images/bankIcons/personal/edelweiss.jpg';
+
 
 
 import 'react-rangeslider/lib/index.css'
@@ -146,6 +157,27 @@ export default class PLSubmit extends React.Component {
                 <BankBox icon={KotakBank} name="Kotak Bank" roi="11.25% - 17.99%" procFee={999} amount={amtValue} term={trmValue}/>
 
                 <BankBox icon={RBLBank} name="RBL Bank" roi="11.25% - 17.99%" procFee={999} amount={amtValue} term={trmValue}/>
+
+
+                <BankBox icon={IndusindBank} name="IndusInd Bank" roi="11.15% - 20.5%" procFee={999} amount={amtValue} term={trmValue}/>
+
+                <BankBox icon={IDFCFirstBank} name="IDFC First Bank" roi="14.00% - 22.00%" procFee={100} amount={amtValue} term={trmValue}/>
+
+                <BankBox icon={TataCapital} name="Tata Capital" roi="11.75% - 19.00%" procFee={100} amount={amtValue} term={trmValue}/>
+
+                <BankBox icon={CitiBank} name="Citi Bank" roi="10.99% - 18.00%" procFee={999} amount={amtValue} term={trmValue}/>
+
+                <BankBox icon={IndiaBulls} name="Indiabulls" roi="12.50% - 15.99%" procFee={150} amount={amtValue} term={trmValue}/>
+
+                <BankBox icon={ShubhLoans} name="Shubh Loans" roi="25.00% - 32.00%" procFee={300} amount={amtValue} term={trmValue}/>
+
+                <BankBox icon={Fullerton} name="Fullerton Bank" roi="11.99% - 25.00%" procFee={999} amount={amtValue} term={trmValue}/>
+
+                <BankBox icon={HomeCredit} name="HomeCredit Bank" roi="13.00% - 30.00%" procFee={999} amount={amtValue} term={trmValue}/>
+
+                <BankBox icon={PaySense} name="PaySense Bank" roi="18.00% - 36.00%" procFee={999} amount={amtValue} term={trmValue}/>
+
+                <BankBox icon={Edelweiss} name="Edelweiss Bank" roi="17.00% - 26.00%" procFee={999} amount={amtValue} term={trmValue}/>
             </div>
 
         </div>

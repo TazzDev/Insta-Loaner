@@ -1,0 +1,41 @@
+#ccdiv {
+    background: #286b4f;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+
+#ccform {
+    font-family: sans-serif;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+#ccform > h4 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 15% 5% 5% 5%;
+}
+
+.ccformGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+}
+
+.ccinput {
+    margin-top: 5%;
+}
+
+#ccbutton{
+    width: 50%;
+    padding: 5%;
+    background: #ce5e32;
+    margin-bottom: 10%;
+    border: none;
+    border-radius: 5px;
+    align-self: center;
+    letter-spacing: 5px;
+}

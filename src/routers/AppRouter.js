@@ -22,6 +22,7 @@ import PRLSubmit from '../components/PRLSubmit';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import EMICalculator from '../components/EMICalculator';
 import CreditScore from '../components/CreditScore';
+import CreditCard from '../components/CreditCard';
 import Partner from '../components/Partner';
 
 
@@ -51,6 +52,7 @@ const AppRouter = () => (
             <Route path="/emi-calculator" component={EMICalculator} />
             <Route path="/join-as-partner" component={Partner} />
             <Route path="/credit-score" component={CreditScore} />
+            <Route path="/credit-card" component={CreditCard} />
         </Switch>
         <Footer />
     </BrowserRouter>

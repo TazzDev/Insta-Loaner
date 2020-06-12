@@ -114,7 +114,7 @@ const MobileHome = () => (
                 <p>Credit Score</p>
             </NavLink>
 
-            <NavLink to="/loans" className="mLinkLogo">
+            <NavLink to="/credit-card" className="mLinkLogo">
                 <img src={CreditCard}></img>
                 <p>Credit Card</p>
             </NavLink>

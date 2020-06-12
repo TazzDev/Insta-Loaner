@@ -30,7 +30,11 @@ export default class MHomeLoan extends React.Component {
 
             <span className="mFormGroup">
                 <label htmlFor="employment" className="mFormLabel">Employment Type:</label>
-                <input type="text" name="employment" id="employment" className="mFormInput" placeholder="your employment"/>
+                <select name="employment" id="employment" className="mFormOption">
+                    <option value='salaried'>Salaried </option>
+                    <option value='self-employed'> Self-Employed </option>
+                    <option value='other'> Other </option>
+                </select>
             </span>
 
             <span className="mFormGroup">
@@ -55,7 +59,12 @@ export default class MHomeLoan extends React.Component {
 
             <span className="mFormGroup">
                 <label htmlFor="time" className="mFormLabel">Time to contact:</label>
-                <input type="text" name="time" id="time" className="mFormInput" placeholder="best time to call you?"/>
+                <select name="time" id="time" className="mFormOption">
+                            <option value="8:30-AM-to-11:30 AM" >8:30 AM to 11:30 AM</option>
+                            <option value="11:30-AM-to-1 PM" selected>11:30 AM to 1 PM</option>
+                            <option value="1-PM-to-3-PM" >1 PM to 3 PM</option>
+                            <option value="3-PM-to-6-PM">3 PM to 6 PM</option>
+                </select>
             </span>
 
             <input type="submit" value="NEXT" id="mFormSubmit"/>

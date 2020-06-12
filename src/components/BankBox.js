@@ -1,7 +1,7 @@
 import React from 'react';
 
 const BankBox = (props) => {
-    const roi = props.roi.slice(0,4);
+    const roi = parseInt(props.roi.slice(0,4));
     return (<div className="bankbox">
                     <img src={props.icon} alt="logo" className="bankLogo"/>
 
