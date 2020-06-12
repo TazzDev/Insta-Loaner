@@ -150,15 +150,18 @@ nav {
 
 
 .mNavlinks {
-    padding: 7%;
-    min-width: 100%;
-    background: rgba(121, 121, 121, 0.835);
-    border-radius: 15px;
-    margin: 0 0 15% 0;
-    text-decoration: none;
     color: white;
-    font-family: sans-serif;
-    //align-self: center;
+    text-decoration: none;
+    margin: 5%;
+    border: 1px solid white;
+    padding: 5%;
+    border-radius: 5px;
+    background: #44ad95;
+}
+
+.mNavlinks:focus {
+    text-decoration: underline;
+    outline: none;
 }
 
 

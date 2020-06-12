@@ -55,7 +55,12 @@ export default class MPersonalLoan extends React.Component {
 
             <span className="mFormGroup">
                 <label htmlFor="time" className="mFormLabel">Time to contact:</label>
-                <input type="text" name="time" id="time" className="mFormInput" placeholder="best time to call you?"/>
+                <select name="time" id="time" id="mFormOption" placeholder="Best time to contact you?">
+                            <option value="8:30 AM to 11:30 AM">8:30 AM to 11:30 AM</option>
+                            <option value="11:30 AM to 1 PM">11:30 AM to 1 PM</option>
+                            <option value="1 PM to 3 PM">1 PM to 3 PM</option>
+                            <option value="3 PM to 6 PM">3 PM to 6 PM</option>
+                        </select>
             </span>
 
             <input type="submit" value="NEXT" id="mFormSubmit"/>
