@@ -66,10 +66,10 @@ const MBanks = () => {
             <img src={Twelve} alt="text" className="mBankIcon" data-aos="fade-in" ata-aos-duration="2000"/>
         </div>
         <div className="mIconContainer">
-            <img src={Thirteen} alt="text" className="mBankIcon" data-aos="fade-in" ata-aos-duration="3000"/>
-            <img src={Fourteen} alt="text" className="mBankIcon" data-aos="fade-in" ata-aos-duration="3000"/>
-            <img src={Fifteen} alt="text" className="mBankIcon" data-aos="fade-in" ata-aos-duration="3000"/>
-            <img src={Sixteen} alt="text" className="mBankIcon" data-aos="fade-in" ata-aos-duration="3000"/>
+            <img src={Thirteen} alt="text" className="mBankIcon" data-aos="fade-in" ata-aos-duration="2500"/>
+            <img src={Fourteen} alt="text" className="mBankIcon" data-aos="fade-in" ata-aos-duration="2500"/>
+            <img src={Fifteen} alt="text" className="mBankIcon" data-aos="fade-in" ata-aos-duration="2500"/>
+            <img src={Sixteen} alt="text" className="mBankIcon" data-aos="fade-in" ata-aos-duration="2500"/>
         </div>
         </div>
     )

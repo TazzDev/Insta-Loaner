@@ -3,7 +3,18 @@ import queryString from 'query-string';
 import Slider from 'react-rangeslider';
 import BankBox from './BankBox';
 
+import AxisBank from '../../public/images/bankIcons/personal/axisbank.png';
+import IciciBank from '../../public/images/bankIcons/personal/icicibank.png';
+import KotakBank from '../../public/images/bankIcons/personal/kotakbank.png';
+import IDFCFirstBank from '../../public/images/bankIcons/personal/idfcbank.png';
 import YesBank from '../../public/images/bankIcons/personal/yesbank.png';
+import RBLBank from '../../public/images/bankIcons/personal/rblbank.png';
+import Deutsche from '../../public/images/bankIcons/personal/deutsche.jpg';
+import IndusindBank from '../../public/images/bankIcons/personal/indusindbank.png';
+import TataCapital from '../../public/images/bankIcons/personal/tata.png';
+import LoanTap from '../../public/images/bankIcons/personal/loantap.png';
+
+
 
 import 'react-rangeslider/lib/index.css'
 
@@ -131,8 +142,16 @@ export default class BLSubmit extends React.Component {
 
             <div id="bankOffers">
 
-                <BankBox icon={YesBank} name="Yes Bank" roi="10.99" procFee={56} amount={amtValue} term={trmValue}/>
-
+            <BankBox icon={AxisBank} name="Axis Bank" roi="11.25% - 24%" procFee={999} amount={amtValue} term={trmValue}/>
+            <BankBox icon={IciciBank} name="Icici Bank" roi="11.25% - 17.99%" procFee={999} amount={amtValue} term={trmValue}/>
+            <BankBox icon={KotakBank} name="Kotak Bank" roi="11.25% - 17.99%" procFee={999} amount={amtValue} term={trmValue}/>
+            <BankBox icon={IDFCFirstBank} name="IDFC First Bank" roi="14.00% - 22.00%" procFee={100} amount={amtValue} term={trmValue}/>
+            <BankBox icon={YesBank} name="Yes Bank" roi="10.99% - 15%" procFee={999} amount={amtValue} term={trmValue}/>
+            <BankBox icon={RBLBank} name="RBL Bank" roi="11.25% - 17.99%" procFee={999} amount={amtValue} term={trmValue}/>
+            <BankBox icon={IndusindBank} name="IndusInd Bank" roi="11.15% - 20.5%" procFee={999} amount={amtValue} term={trmValue}/>
+            <BankBox icon={Deutsche} name="Deutsche Bank" roi="11.15% - 20.5%" procFee={999} amount={amtValue} term={trmValue}/>
+            <BankBox icon={TataCapital} name="Tata Capital" roi="11.75% - 19.00%" procFee={100} amount={amtValue} term={trmValue}/>
+            <BankBox icon={LoanTap} name="Loan Tap" roi="11.75% - 19.00%" procFee={100} amount={amtValue} term={trmValue}/>
 
             </div>
 

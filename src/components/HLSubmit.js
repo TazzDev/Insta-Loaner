@@ -3,7 +3,16 @@ import queryString from 'query-string';
 import Slider from 'react-rangeslider';
 import BankBox from './BankBox';
 
-import YesBank from '../../public/images/bankIcons/personal/yesbank.png';
+import SbiBank from '../../public/images/bankIcons/personal/sbi.png';
+import PnbBank from '../../public/images/bankIcons/personal/pnb.png';
+import Canara from '../../public/images/bankIcons/personal/canara.png';
+import HDFC from '../../public/images/bankIcons/personal/hdfc.png';
+import Icici from '../../public/images/bankIcons/personal/icicibank.png';
+import Axis from '../../public/images/bankIcons/personal/axisbank.png';
+import Kotak from '../../public/images/bankIcons/personal/kotakbank.png';
+import Piramal from '../../public/images/bankIcons/personal/piramal.png';
+import PnbHousing from '../../public/images/bankIcons/personal/pnbhousing.png';
+import Dbs from '../../public/images/bankIcons/personal/dbs.png';
 
 import 'react-rangeslider/lib/index.css'
 
@@ -132,8 +141,25 @@ export default class HLSubmit extends React.Component {
 
             <div id="bankOffers">
 
-                <BankBox icon={YesBank} name="Yes Bank" roi="10.99" procFee={56} amount={amtValue} term={trmValue}/>
+                <BankBox icon={SbiBank} name="Yes Bank" roi="10.99" procFee={999} amount={amtValue} term={trmValue}/>
 
+                <BankBox icon={PnbBank} name="Yes Bank" roi="10.99" procFee={999} amount={amtValue} term={trmValue}/>
+
+                <BankBox icon={Canara} name="Yes Bank" roi="10.99" procFee={999} amount={amtValue} term={trmValue}/>
+
+                <BankBox icon={HDFC} name="Yes Bank" roi="10.99" procFee={999} amount={amtValue} term={trmValue}/>
+
+                <BankBox icon={Icici} name="Yes Bank" roi="10.99" procFee={999} amount={amtValue} term={trmValue}/>
+
+                <BankBox icon={Axis} name="Yes Bank" roi="10.99" procFee={999} amount={amtValue} term={trmValue}/>
+
+                <BankBox icon={Kotak} name="Yes Bank" roi="10.99" procFee={999} amount={amtValue} term={trmValue}/>
+
+                <BankBox icon={Piramal} name="Yes Bank" roi="10.99" procFee={999} amount={amtValue} term={trmValue}/>
+
+                <BankBox icon={PnbHousing} name="Yes Bank" roi="10.99" procFee={999} amount={amtValue} term={trmValue}/>
+
+                <BankBox icon={Dbs} name="Yes Bank" roi="10.99" procFee={999} amount={amtValue} term={trmValue}/>
 
             </div>
 
