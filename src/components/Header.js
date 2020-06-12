@@ -101,6 +101,9 @@ var styles = {
     }
   }
 
+// Actual mobile header definition
+
+
 const MobileHeader = () => (
     <div id="mHeader">
         
@@ -110,10 +113,10 @@ const MobileHeader = () => (
             <NavLink to="/" activeClassName="is-active" className="mNavlinks">Home</NavLink>
             <NavLink to="/about" activeClassName="is-active" className="mNavlinks">About Us</NavLink>
             <NavLink to="/join-as-partner" activeClassName="is-active" className="mNavlinks">Join as Partner</NavLink>
-            <NavLink to="/personal-loan" activeClassName="is-active" className="mNavlinks">Personal Loan</NavLink>
-            <NavLink to="/home-loan" activeClassName="is-active" className="mNavlinks">Home Loan</NavLink>
-            <NavLink to="/business-loan" activeClassName="is-active" className="mNavlinks">Business Loan</NavLink>
-            <NavLink to="/loan-against-property" activeClassName="is-active" className="mNavlinks">Property Loan</NavLink>
+            <NavLink to="/m-personal-loan" activeClassName="is-active" className="mNavlinks">Personal Loan</NavLink>
+            <NavLink to="/m-home-loan" activeClassName="is-active" className="mNavlinks">Home Loan</NavLink>
+            <NavLink to="/m-business-loan" activeClassName="is-active" className="mNavlinks">Business Loan</NavLink>
+            <NavLink to="/m-loan-against-property" activeClassName="is-active" className="mNavlinks">Property Loan</NavLink>
             <hr style={{width:"100%", marginBottom:"15%"}}/>
             <NavLink to="/credit-score" activeClassName="is-active" className="mNavlinks">Credit Score</NavLink>
             <NavLink to="/emi-calculator" activeClassName="is-active" className="mNavlinks">Calculate EMI</NavLink>

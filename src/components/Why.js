@@ -30,17 +30,17 @@ Compare from various offering on our platform</p>
 
                     <span className="benefit">
                     <img src={Ben3} className="benpic"></img>
-                    <h3>Best Rate of Interest</h3>
-                    <p>Banks provides the best option available basis your profile
-Compare from various offering on our platform</p>
+                    <h3>Instant Approval</h3>
+                    <p>Bank and you agree on the terms and offering
+Get instant sanction and process for Disbursal</p>
                     </span>
 
                     <span className="benefit">
                     <img src={Ben4} className="benpic"></img>
-                    <h3>Best Rate of Interest</h3>
-                    <p>Banks provides the best option available basis your profile
-Compare from various offering on our platform</p>
+                    <h3>Exclusive Insurance</h3>
+                    <p>All loans availed from comes with exclusive Insurance benefits.</p>
                     </span>
+                    
                 </div>
             </div>
         </div>

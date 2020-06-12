@@ -51,6 +51,7 @@
 #mAboutPage {
     display: none;
     width: 100%;
+    background: #44ad95;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -78,7 +79,7 @@
 #mAboutTitle > h4 {
     font-family: 'Roboto',sans-serif;
     font-size: 2rem;
-    color: #0ed3a6;
+    color: white;
     text-align: center;
 }
 
@@ -87,6 +88,7 @@
     padding: 5%;
     text-align: justify;
     border: 1px solid rgba(0,0,0,0.2);
+    background: white;
     border-radius: 10px;
     color: rgb(66, 65, 65);
     font-family: sans-serif;

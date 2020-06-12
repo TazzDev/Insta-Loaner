@@ -29,7 +29,15 @@
     }
 
     #mFooter {
-        display: block;
+        display: flex;
+        justify-content: center;   
         width: 100%;
+        background: rgba(0,255,0,0.3);
     }
+
+    #credits > h5 {
+        margin: 0;
+        padding: 0;
+    }
+
 }
