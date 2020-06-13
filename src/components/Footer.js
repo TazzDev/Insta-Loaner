@@ -9,7 +9,7 @@ const Footer = () => {
 
             </div>
             <div id="footerEnd">
-                <h5>&copy;2020&nbsp;Created&nbsp;by&nbsp;Thomson&nbsp;Martin</h5>
+                <h5>&copy;2020&nbsp;Created&nbsp;by&nbsp;Insta&nbsp;Loaner</h5>
                 <h5>Disclaimer
                 Privacy Policy</h5>
             </div>
@@ -21,7 +21,7 @@ const Footer = () => {
 const MFooter = () => (
     <div id="mFooter">
         <div id="credits">
-            <h5>&copy;2020&nbsp;Created&nbsp;by&nbsp;Thomson&nbsp;Martin</h5>
+            <h5>&copy;2020&nbsp;Created&nbsp;by&nbsp;Insta&nbsp;Loaner</h5>
             <h5>Disclaimer
                 Privacy Policy</h5>
         </div>

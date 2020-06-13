@@ -15,7 +15,9 @@ const Home = () => {
         <React.Fragment>
         <MobileHome />
         <div style={{margin: '0', padding: '0'}} id="home">
+
     <div className="background">{/*The background render*/}</div>
+
         <div id="formSection">
             <div className="quote">
                 <h1>MAXIMIZE YOUR<br/>
@@ -84,27 +86,27 @@ const MobileHome = () => (
             <p>Compare & apply for personalized loans with leading lenders and choose with ease</p>
         </div>
 
-        <NavLink id="mHomeButton" to="/m-personal-loan">Apply Now</NavLink>
+        <NavLink id="mHomeButton" to="/personal-loan">Apply Now</NavLink>
 
         <div className="mLinkSection">
-            <NavLink to="/m-personal-loan" className="mLinkLogo">
+            <NavLink to="/personal-loan" className="mLinkLogo">
                 <img src={Personal}></img>
                 <p>Personal Loan</p>
             </NavLink>
 
-            <NavLink to="/m-business-loan" className="mLinkLogo">
+            <NavLink to="/business-loan" className="mLinkLogo">
                 <img src={Business}></img>
                 <p>Business Loan</p>
             </NavLink>
 
-            <NavLink to="/m-home-loan" className="mLinkLogo">
+            <NavLink to="/home-loan" className="mLinkLogo">
                 <img src={HomeImg}></img>
                 <p>Home Loan</p>
             </NavLink>
         </div>
         <div className="mLinkSection">
 
-            <NavLink to="/m-loan-against-property" className="mLinkLogo">
+            <NavLink to="/loan-against-property" className="mLinkLogo">
                 <img src={Property}></img>
                 <p>Property Loan</p>
             </NavLink>
