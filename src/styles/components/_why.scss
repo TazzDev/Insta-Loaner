@@ -1,5 +1,5 @@
 #whyContainer {
-    max-width: 100%;
+    max-width: 100vw;
     background: linear-gradient(white,#e5d270);
     display: flex;
     justify-content: center;
@@ -8,17 +8,18 @@
 
 #content {
     font-family: sans-serif;
-    min-width: 60%;
+    max-width: 100%;
     text-align: center;
 }
 
 #content > h1 {
     font-weight: 300;
+    font-size: 5vmin;
 }
 
 #content > h4 {
     font-weight: 200;
-    font-size: 1.2rem;
+    font-size: 2vmin;
 }
 
 #content > hr {
@@ -33,31 +34,31 @@
 .benefit {
     display: flex;
     flex-direction: column;
-    max-width: 15rem;
-    margin: 5rem;
+    width: 15vw;
+    margin: 5vh 5vw;
 }
 
 .benefit > p {
-    line-height: 2rem;
+    line-height: 2vmin;
 }
 
 
 //partial why component
 
 #whyPartContainer {
-    max-width: 60%;
-    margin-left: 8%;
+    max-width: 80vw;
+    margin-left: 8vw;
     background: white;
     display: flex;
     justify-content: center;
-    padding: 2rem 0;
+    padding: 2vmin 0;
 }
 
 .partbenefit {
     display: flex;
     flex-direction: column;
-    max-width: 15rem;
-    margin: 5rem;
+    max-width: 15vw;
+    margin: 2vh 3vw;
 }
 //Mobile responsiveness
 

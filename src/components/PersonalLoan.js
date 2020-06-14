@@ -179,7 +179,7 @@ submitMForm = (e) => {
                 </div>
             </div>
             <div id="whypersonal">
-                <h4>Why Insta Loaner?</h4><hr style={{width:"50%"}}/><br/>
+                <h4>Why Insta Loaner?</h4><hr style={{width:"50%",marginBottom:"3vh"}}/><br/>
                 <p>Personal loan is a short to medium term unsecured loan granted to an individual.
                 It is commonly used to meet such financial needs as debt consolidation, wedding expenses,
                  unexpected medical costs, home renovation and others. Flexibility of usage, minimal 

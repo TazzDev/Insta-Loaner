@@ -13,7 +13,7 @@ export const Why = () => {
         <React.Fragment>
         <div id="whyContainer" >
             <div id="content">
-                <h1>Why Choose Us?</h1><hr/>
+                <h1>Why Choose Us?</h1><hr style={{width:"80%"}}/>
                 <h4>Enjoy Multiple Benefits When You Take A Loan</h4>
                 <div id="benefits">
                     <span className="benefit" data-aos="fade-left" data-aos-duration="1500">
