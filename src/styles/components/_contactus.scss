@@ -1,0 +1,65 @@
+#contactus {
+    width: 100vw;
+    background: rgb(1, 126, 99);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 35vh;
+    padding: 5vh 0;
+
+}
+
+.contactbox {
+    display: flex;
+    flex-direction: column;
+    //justify-content: space-evenly;
+    align-items: center;
+    height: 90%;
+    width: 20%;
+}
+
+.contactbox p {
+    margin-top: 5vh;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 2vmin;
+}
+
+.cLogo{
+
+    width: 4vw;
+    height: 10vh;
+    padding: 2vh 2vw;
+    background: rgba(255,255,255,0.8);
+    border: none;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+
+    #contactus {
+        flex-direction: column;
+        height: 100%;
+        padding: 5vh 0;
+    }
+    .cLogo {
+        height: 4vh;
+        width: 8vw;
+    }
+
+    .contactbox {
+        width: 60%;
+    }
+
+    .contactbox p {
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+
+        letter-spacing: 2px;
+        text-align: center;
+        font-size: 3.5vmin;
+        font-family: sans-serif;
+        font-weight: 600;
+    }
+}

@@ -19,6 +19,7 @@ import EMICalculator from '../components/EMICalculator';
 import CreditScore from '../components/CreditScore';
 import CreditCard from '../components/CreditCard';
 import Partner from '../components/Partner';
+import PrivacyPolicy from '../components/PrivacyPolicy';
 
 import { createBrowserHistory } from 'history';
 
@@ -55,6 +56,9 @@ const AppRouter = () => (
             <Route path="/join-as-partner" component={Partner} />
             <Route path="/credit-score" component={CreditScore} />
             <Route path="/credit-card" component={CreditCard} />
+
+            <Route path="/privacy-policy" component={PrivacyPolicy} />
+
         </Switch>
         <Footer />
     </BrowserRouter>

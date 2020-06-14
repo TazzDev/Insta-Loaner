@@ -9,6 +9,7 @@ import HomeImg from '../../public/images/Home.png';
 import Property from '../../public/images/Property.png';
 import CreditScore from '../../public/images/CreditScore.png';
 import CreditCard from '../../public/images/CreditCard.png';
+import ContactUs from './ContactUs';
 
 const Home = () => {
     return (
@@ -72,6 +73,7 @@ const Home = () => {
         <Why />
         <Compare />
         <Offers />
+        <ContactUs/>
         </div>
         </React.Fragment>
     )
@@ -123,6 +125,8 @@ const MobileHome = () => (
 
         <Why />
         <Compare />
+        <ContactUs/>
+
     </div>
 )
 
