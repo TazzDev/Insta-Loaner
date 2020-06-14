@@ -39,7 +39,8 @@
 }
 
 .benefit > p {
-    line-height: 2vmin;
+    line-height: 3vmin;
+    font-size: 1.6vmin;
 }
 
 
@@ -63,12 +64,46 @@
 //Mobile responsiveness
 
 @media (max-width: 768px) {
+    #whyContainer {
+        width: 100vw;
+    }
+
     #content {
         display: flex;
         flex-direction: column;
+        width: 100%;
+    }
+
+    #content > h1 {
+        font-weight: 300;
+        font-size: 10vmin;
+    }
+    
+    #content > h4 {
+        font-weight: 200;
+        font-size: 5vmin;
     }
 
     #benefits {
         flex-direction: column;
+        }
+
+    .benefit {
+        width: 60%;
+        margin: auto auto 10vh auto;
+        line-height: 3vmin;
+        font-size: 4vmin;
+    }
+
+    .benefit > p {
+        line-height: 6vmin;
+        font-size: 4vmin;
+
+    }
+
+    .benpic {
+        align-self: center;
+        width: 40vmin;
+        height: 40vmin;
     }
 }

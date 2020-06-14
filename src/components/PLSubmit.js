@@ -28,8 +28,8 @@ export default class PLSubmit extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            amtValue: 10,
-            trmValue: 10,
+            amtValue: 10000,
+            trmValue: 1,
         }
     }
 

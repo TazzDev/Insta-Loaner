@@ -92,7 +92,7 @@ export default class PLSubmit extends React.Component {
             {/* Actual code for personal loan submit section*/}
             <div id="PLSbanner">
 
-                Compare Personal Loans
+                Compare Property Loans
 
             </div>
 

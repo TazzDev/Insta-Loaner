@@ -16,7 +16,7 @@ export const Why = () => {
                 <h1>Why Choose Us?</h1><hr style={{width:"80%"}}/>
                 <h4>Enjoy Multiple Benefits When You Take A Loan</h4>
                 <div id="benefits">
-                    <span className="benefit" data-aos="fade-left" data-aos-duration="1500">
+                    <span className="benefit" data-aos="fade-right" data-aos-duration="1500">
                     <img src={Ben1} className="benpic"></img>
                     <h3>2 Step Loan Process</h3>
                     <p>Register – Share your basic details like – 
@@ -31,7 +31,7 @@ export const Why = () => {
 Compare from various offering on our platform</p>
                     </span>
 
-                    <span className="benefit" data-aos="fade-left" data-aos-duration="1500">
+                    <span className="benefit" data-aos="fade-right" data-aos-duration="1500">
                     <img src={Ben3} className="benpic"></img>
                     <h3>Instant Approval</h3>
                     <p>Bank and you agree on the terms and offering
