@@ -4,7 +4,8 @@
     //background: linear-gradient(white,rgb(39, 100, 92));
     display: flex;
     justify-content: center;
-    padding: 3rem;
+    padding: 5vh 5vw;
+    max-height: 70vh;
 }
 
 #plForm {
@@ -13,14 +14,15 @@
     //height: 65vh;
     border-radius: 20px;
     box-shadow: 1px 1px 10px 2px rgb(0,0,0);
-    padding: 2rem;
+    padding: 2vh 2vw;
     text-align: center;
 }
 
 
 #plForm > h2 {
     font-family: 'Roboto', sans-serif;
-    margin-bottom: 2rem;
+    font-size: 3vmin;
+    margin-bottom: 5vh;
     padding: 0;
 }
 
@@ -41,7 +43,7 @@
 }
 
 .plFormGroup > input {
-    margin-left: 2.5rem;
+    //margin-left: 2vw;
     background: #5aa8d4;
     border: 0.1px solid white;
     border-radius: 3px;
@@ -182,9 +184,9 @@
     height: 2.1rem;
     border: none;
     -webkit-appearance: none;
+    border-radius: 5px;
     -webkit-border-radius: 5px;
     font-size: 0.8rem;
-
 }
 
 .mFormOption:focus {

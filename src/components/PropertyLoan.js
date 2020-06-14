@@ -100,7 +100,7 @@ class PropertyLoan extends React.Component {
                         <label htmlFor="fullName">
                             Full name:
                         </label>
-                        <input type="text" name="fullName" id="plfullName" onBlur={this.handleChange} onFocus={this.handleFocusBack} required/>
+                        <input type="text" name="fullName" id="lapfullName" onBlur={this.handleChange} onFocus={this.handleFocusBack} required/>
                         </div>
 
                         {this.state.nameErr ? <span className="err">{this.state.nameErr}</span> : <span className="err">&nbsp;</span>}
@@ -109,7 +109,7 @@ class PropertyLoan extends React.Component {
                         <label htmlFor="phone">
                             Phone:
                         </label>
-                        <input type="tel" name="phone" id="plphone" onBlur={this.handleChange} onFocus={this.handleFocusBack} required/>
+                        <input type="tel" name="phone" id="lapphone" onBlur={this.handleChange} onFocus={this.handleFocusBack} required/>
                         </div>
 
                         {this.state.telErr ? <span className="err">{this.state.telErr}</span> : <span className="err">&nbsp;</span>}
@@ -118,7 +118,7 @@ class PropertyLoan extends React.Component {
                         <label htmlFor="location">
                             Location:
                         </label>
-                        <input type="text" name="location" id="pllocation"/>
+                        <input type="text" name="location" id="laplocation"/>
                         </div>
 
                         {/* 
@@ -130,7 +130,7 @@ class PropertyLoan extends React.Component {
                         <label htmlFor="amount">
                             Loan Amount:
                         </label>
-                        <input type="number" name="amount" id="plamount"/>
+                        <input type="number" name="amount" id="lapamount"/>
                         </div>
 
                         <span className="err">&nbsp;</span>
@@ -139,7 +139,7 @@ class PropertyLoan extends React.Component {
                         <label htmlFor="employment">
                             Employment Type:
                         </label>
-                        <input type="text" name="employment" id="plemployment"/>
+                        <input type="text" name="employment" id="lapemployment"/>
                         </div>
 
                         <span className="err">&nbsp;</span>
@@ -148,7 +148,7 @@ class PropertyLoan extends React.Component {
                         <label htmlFor="income">
                             Monthly Income:
                         </label>
-                        <input type="number" name="income" id="plincome" onBlur={this.handleChange} onFocus={this.handleFocusBack} required/>
+                        <input type="number" name="income" id="lapincome" onBlur={this.handleChange} onFocus={this.handleFocusBack} required/>
                         </div>
 
                         {this.state.incErr ? <span className="err">{this.state.incErr}</span> : <span className="err">&nbsp;</span>}
@@ -157,7 +157,7 @@ class PropertyLoan extends React.Component {
                         <label htmlFor="time">
                             Best time to contact:
                         </label>
-                        <select name="time" id="pltime" className="option" >
+                        <select name="time" id="laptime" className="option" >
                             <option value="8:30 AM to 11:30 AM">8:30 AM to 11:30 AM</option>
                             <option value="11:30 AM to 1 PM">11:30 AM to 1 PM</option>
                             <option value="1 PM to 3 PM">1 PM to 3 PM</option>
@@ -214,7 +214,7 @@ class PropertyLoan extends React.Component {
         {/* Mobile Considerations */}
 
         <div id="mPersonalContainer">
-        <form id="mPersonalLoanContainer" onSubmit={this.submitForm}>
+        <form id="mPersonalLoanContainer" onSubmit={this.submitMForm}>
 
             <h5 id="mFormTitle">Compare and apply for loan against property!<hr style={{width:"80%",color:"#ce5e32"}}/></h5>
 

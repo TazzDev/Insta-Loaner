@@ -13,7 +13,7 @@ const Header = () => (
         <NavLink to="/" activeClassName="is-active" 
             activeStyle={{
                 textDecoration: "none",
-                marginLeft: "5%"
+                marginLeft: "5vw"
                 }}>
 
             <img src={Logo} className="logo"></img>

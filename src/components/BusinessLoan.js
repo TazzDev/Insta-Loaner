@@ -98,7 +98,7 @@ class BusinessLoan extends React.Component{
                         <label htmlFor="fullName">
                             Full name:
                         </label>
-                        <input type="text" name="fullName" id="hlfullName" onBlur={this.handleChange} onFocus={this.handleFocusBack} required/>
+                        <input type="text" name="fullName" id="blfullName" onBlur={this.handleChange} onFocus={this.handleFocusBack} required/>
                         </div>
 
                         {this.state.nameErr ? <span className="err">{this.state.nameErr}</span> : <span className="err">&nbsp;</span>}
@@ -107,7 +107,7 @@ class BusinessLoan extends React.Component{
                         <label htmlFor="phone">
                             Phone:
                         </label>
-                        <input type="tel" name="phone" id="hlphone" onBlur={this.handleChange} onFocus={this.handleFocusBack} required/>
+                        <input type="tel" name="phone" id="blphone" onBlur={this.handleChange} onFocus={this.handleFocusBack} required/>
                         </div>
 
                         {this.state.telErr ? <span className="err">{this.state.telErr}</span> : <span className="err">&nbsp;</span>}
@@ -116,7 +116,7 @@ class BusinessLoan extends React.Component{
                         <label htmlFor="location">
                             Location:
                         </label>
-                        <input type="text" name="location" id="hllocation"/>
+                        <input type="text" name="location" id="bllocation"/>
                         </div>
 
                         {/* 
@@ -128,7 +128,7 @@ class BusinessLoan extends React.Component{
                         <label htmlFor="amount">
                             Loan Amount:
                         </label>
-                        <input type="number" name="amount" id="hlamount"/>
+                        <input type="number" name="amount" id="blamount"/>
                         </div>
 
                         <span className="err">&nbsp;</span>
@@ -137,7 +137,7 @@ class BusinessLoan extends React.Component{
                         <label htmlFor="employment">
                             Employment Type:
                         </label>
-                        <input type="text" name="employment" id="hlemployment"/>
+                        <input type="text" name="employment" id="blemployment"/>
                         </div>
 
                         <span className="err">&nbsp;</span>
@@ -146,7 +146,7 @@ class BusinessLoan extends React.Component{
                         <label htmlFor="income">
                             Monthly Income:
                         </label>
-                        <input type="number" name="income" id="hlincome" onBlur={this.handleChange} onFocus={this.handleFocusBack} required/>
+                        <input type="number" name="income" id="blincome" onBlur={this.handleChange} onFocus={this.handleFocusBack} required/>
                         </div>
 
                         {this.state.incErr ? <span className="err">{this.state.incErr}</span> : <span className="err">&nbsp;</span>}
@@ -155,7 +155,7 @@ class BusinessLoan extends React.Component{
                         <label htmlFor="time">
                             Best time to contact:
                         </label>
-                        <select name="time" id="hltime" className="option" >
+                        <select name="time" id="bltime" className="option" >
                             <option value="8:30 AM to 11:30 AM">8:30 AM to 11:30 AM</option>
                             <option value="11:30 AM to 1 PM">11:30 AM to 1 PM</option>
                             <option value="1 PM to 3 PM">1 PM to 3 PM</option>
@@ -210,12 +210,12 @@ class BusinessLoan extends React.Component{
 
             <span className="mFormGroup">
                 <label htmlFor="amount" className="mFormLabel">Loan Amount</label>
-                <input type="number" name="amount" id="amount" className="mFormInput" placeholder="the loan amount"/>
+                <input type="number" name="amount" id="bl-amount" className="mFormInput" placeholder="the loan amount"/>
             </span>
 
             <span className="mFormGroup">
                 <label htmlFor="employment" className="mFormLabel">Employment Type:</label>
-                <select name="employment" id="employment" className="mFormOption">
+                <select name="employment" id="bl-employment" className="mFormOption">
                     <option value='salaried'>Salaried </option>
                     <option value='self-employed'> Self-Employed </option>
                     <option value='other'> Other </option>
@@ -224,27 +224,27 @@ class BusinessLoan extends React.Component{
 
             <span className="mFormGroup">
                 <label htmlFor="income" className="mFormLabel">Income:</label>
-                <input type="number" name="income" id="income" className="mFormInput" placeholder="your income" required/>
+                <input type="number" name="income" id="bl-income" className="mFormInput" placeholder="your income" required/>
             </span>
 
             <span className="mFormGroup">
                 <label htmlFor="fullName" className="mFormLabel">Name:</label>
-                <input type="text" name="fullName" id="fullName" className="mFormInput" placeholder="your name" required/>
+                <input type="text" name="fullName" id="bl-fullName" className="mFormInput" placeholder="your name" required/>
             </span>
 
             <span className="mFormGroup">
                 <label htmlFor="phone" className="mFormLabel">Phone:</label>
-                <input type="tel" name="phone" id="phone" className="mFormInput" placeholder="your number" required/>
+                <input type="tel" name="phone" id="bl-phone" className="mFormInput" placeholder="your number" required/>
             </span>
 
             <span className="mFormGroup">
                 <label htmlFor="location" className="mFormLabel">Location:</label>
-                <input type="text" name="location" id="location" className="mFormInput" placeholder="Enter your location"/>
+                <input type="text" name="location" id="bl-location" className="mFormInput" placeholder="Enter your location"/>
             </span>
 
             <span className="mFormGroup">
                 <label htmlFor="time" className="mFormLabel">Time to contact:</label>
-                <select name="time" id="time" className="mFormOption">
+                <select name="time" id="bl-time" className="mFormOption">
                             <option value="8:30-AM-to-11:30 AM" >8:30 AM to 11:30 AM</option>
                             <option value="11:30-AM-to-1 PM" selected>11:30 AM to 1 PM</option>
                             <option value="1-PM-to-3-PM" >1 PM to 3 PM</option>

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 
 header {
-    padding-top: 1%;
+    padding-top: 2vh;
     display: flex;
     justify-content: space-between;
     font-family: 'Roboto',sans-serif;
@@ -9,8 +9,9 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-between;
-    margin-top: 2%;
+    justify-content: flex-end;
+    margin-top: 2vw;
+    width: 70vw;
 }
 
 .navlinks {
@@ -20,18 +21,14 @@ nav {
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.15);
     border-radius: 30px;
-    padding: 0.8rem 1.5rem 0.2rem 1.5rem;
-    font-size: 1.4rem;
-    max-height: 40%;
+    padding: 1vmin 2.4vmin;
+    vertical-align: auto;
+    font-size: 1.2vmax;
+    height: 3vh;
+    line-height: 3vh;
     text-shadow: 0 0.5px 1px rgba(0,0,0,0.6);
 }
 
-@media only screen and (max-width: 1370px) {
-    .navlinks {
-        font-size: 1rem;
-        padding: auto;
-    }
-}
 
 //Hover for navlinks to change color
 
@@ -55,10 +52,10 @@ nav {
     display: none;
     flex-direction: column;
     position: absolute;
-    right: 37%;
-    top: 10.5%;
+    right: 37vw;
+    top: 10.5vh;
     z-index: 1;
-    width: 10%;
+    width: 10vw;
     border: 2px solid rgba(0,0,0,0.7);
     border-radius: 15px;
 }
@@ -73,8 +70,8 @@ nav {
 .dropitem {
     text-decoration: none;
     color: #02f9c2;
-    font-size: 1.2rem;
-    padding: 10px;
+    font-size: inherit;
+    padding: 1vmin;
     background: black;
     //border-radius: inherit;
 }
@@ -109,8 +106,8 @@ nav {
 
 
 .logo {
-    width: 15rem;
-    height: 7rem;
+    width: 15vw;
+    height: 12vh;
 }
 
 

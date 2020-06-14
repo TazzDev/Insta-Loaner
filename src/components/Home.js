@@ -14,10 +14,9 @@ const Home = () => {
     return (
         <React.Fragment>
         <MobileHome />
-        <div style={{margin: '0', padding: '0'}} id="home">
-
-    <div className="background">{/*The background render*/}</div>
-
+        <div style={{margin: '0', padding: '0'}} id="home" >
+        <div className="background"></div>
+    {/*The background render*/}
         <div id="formSection">
             <div className="quote">
                 <h1>MAXIMIZE YOUR<br/>
