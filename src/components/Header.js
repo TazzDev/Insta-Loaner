@@ -91,10 +91,13 @@ var styles = {
     bmItemList: {
       
       color: '#b8b7ad',
-      padding: '0.8em'
+      //padding: '0.8em',
+      margin: 0,
     },
     bmItem: {
-      display: 'inline-block'
+      display: 'inline-block',
+      margin: 0,
+      padding: 0,
     },
     bmOverlay: {
       background: 'rgba(0, 0, 0, 0.3)'
