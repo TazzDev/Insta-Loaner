@@ -11,9 +11,9 @@ const Footer = () => {
 
             </div>
             <div id="footerEnd">
-                <h5>&copy;2020&nbsp;Created&nbsp;by&nbsp;Insta&nbsp;Loaner</h5>
-                <h5>Disclaimer
-                <NavLink to="/privacy-policy" activeClassName="is-active" className="privbutton">Privacy Policy</NavLink></h5>
+                <h5 style={{color:"white"}}>&copy;2020&nbsp;Created&nbsp;by&nbsp;Insta&nbsp;Loaner</h5>
+                <h5><NavLink to="/" className="fbutton">Disclaimer</NavLink>
+                <NavLink to="/privacy-policy" activeClassName="is-active" className="fbutton">Privacy Policy</NavLink></h5>
             </div>
         </div>
         </React.Fragment>
@@ -23,11 +23,9 @@ const Footer = () => {
 const MFooter = () => (
 
     <div id="mFooter">
-        <div id="credits">
-            <h5>&copy;2020&nbsp;Created&nbsp;by&nbsp;Insta&nbsp;Loaner</h5>
-            <h5>Disclaimer
-                <NavLink to="/privacy-policy" activeClassName="is-active" className="privbutton">Privacy Policy</NavLink></h5>
-        </div>
+            <h5 style={{color:"white"}}>&copy;2020&nbsp;Created&nbsp;by&nbsp;Insta&nbsp;Loaner</h5>
+            <h5><NavLink to="/" className="fbutton">Disclaimer</NavLink>
+                <NavLink to="/privacy-policy" activeClassName="is-active" className="fbutton">Privacy Policy</NavLink></h5>
     </div>
 
 )
